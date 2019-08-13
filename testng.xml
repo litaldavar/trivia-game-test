@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	 <test thread-count="5" name="chrometest">
+
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="tests.SanityTest" />				
+		</classes>
+	</test>
+	
+	<!-- <test thread-count="5" name="funcionality">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			
+		</classes>
+	</test>  -->
+	
+	
+	<!-- <test thread-count="5" name="firefoxtest">
+
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="TriviaTesting.GameTests" />
+			<class name="TriviaTesting.GameFunctionality" />
+		</classes>
+	</test>
+ -->
+
+
+</suite> 
+
