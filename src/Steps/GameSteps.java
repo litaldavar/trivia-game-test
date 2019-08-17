@@ -22,6 +22,12 @@ public class GameSteps extends BaseSteps {
 	private By playButton = By.xpath("//*[@id=\"secondepage\"]/center/button[1]");
 	//Repetitive next answer button
 	private By nextAbutton = By.id("btnnext");
+	//Repetitive back button for questions
+	private By backQButton = By.id("backquest");
+	private By quitSetUp = By.xpath("//*[@id=\"secondepage\"]/center/button[2]");
+	private By tryAgainButton = By.xpath("//*[@id=\"markpage\"]/center/button[1]");
+	private By QuitGameButton = By.xpath("//*[@id=\"markpage\"]/center/button[2]");
+	private By facebookButton = By.xpath("//*[@id=\"fackBook2\"]/img");
 	
 	private int qNum = 2;
 	
@@ -131,4 +137,23 @@ public class GameSteps extends BaseSteps {
 		click(nextAbutton);
 	}
 
+	/** click back button for getting back to previous question*/
+	public void clicBackQ() {
+		click(backQButton);
+	}
+	
+	/** click quit button after setup */
+	public void clickquitSetup() {
+		click(quitSetUp);
+	}
+	
+	/**click Try again button*/
+	public void clickTryAgain() {
+		click(tryAgainButton);
+	}
+	
+	/**click quit game button */
+	public void clickQuit() {
+		click(QuitGameButton);
+	}
 }

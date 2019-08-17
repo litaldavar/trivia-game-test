@@ -1,18 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="chrometest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="CromeTest(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
     <classes>
-      <class name="tests.SanityTest">
+      <class name="tests.FuncTests">
         <methods>
-          <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="beforeSuite"/>
+          <include name="selectAnswerVar4EachQ"/>
+        </methods>
+      </class> <!-- tests.FuncTests -->
+      <class name="tests.SanityTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
           <include name="sanityTest"/>
         </methods>
       </class> <!-- tests.SanityTest -->
     </classes>
-  </test> <!-- chrometest(failed) -->
+  </test> <!-- CromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="all"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.FuncTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="selectAnswerVar4EachQ"/>
+        </methods>
+      </class> <!-- tests.FuncTests -->
+      <class name="tests.SanityTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="sanityTest"/>
+        </methods>
+      </class> <!-- tests.SanityTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

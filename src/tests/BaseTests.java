@@ -3,8 +3,6 @@ package tests;
 
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
@@ -20,10 +18,10 @@ public class BaseTests {
   @Parameters("browser")	 
   public void beforeMethod(@Optional("chrome") String browser) {
 	 Reporter.log("Method start",true);
-	 Reporter.log("Test is running on " + browser, true);
+	// Reporter.log("Test is running on " + browser, true);
 	 //in every Method we start at fresh with browser closed"
 	 // we open the browser and log on to the game site"
-	 switch(browser){
+	/* switch(browser){
 	  case "firefox":
 		  System.setProperty("webdriver.gecko.driver",  "C:\\Selenium\\drive\\Firefox\\geckodriver.exe");
 		  driver = new FirefoxDriver();
@@ -38,11 +36,12 @@ public class BaseTests {
 		  System.setProperty("webdriver.chromedriver",  "C:\\Selenium\\drive\\chrome\\chromedriver.exe");
 		  driver = new FirefoxDriver();
 		 break;
-	  }
-	 
+	  }*/
+	 BrowserDriverFactory factory = new BrowserDriverFactory(browser);
+	 driver = factory.CreateDriver();
   }
 
-  @AfterMethod
+  @AfterMethod(alwaysRun = true)
   public void afterMethod() throws InterruptedException {
 	  Thread.sleep(2000);	  
 	Reporter.log("End of Method" , true);

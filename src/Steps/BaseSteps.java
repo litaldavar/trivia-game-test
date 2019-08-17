@@ -63,7 +63,7 @@ public class BaseSteps {
 
 	/** Click on element with given locator when its visible */
 	protected void click(By locator) {
-		Reporter.log("find locaator: " + locator.toString(), true);
+		
 		waitForVisibilityOf(locator, 5);
 		WebElement e = driver.findElement(locator);
 		if (e == null) {
@@ -72,7 +72,7 @@ public class BaseSteps {
 		}
 		//Reporter.log(e.getTagName(), true);
 		e.click();
-		Reporter.log("end click", true);
+		
 	}
 	
 	protected void sleep(int m) {

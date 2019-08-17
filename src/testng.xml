@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" >
-	<test  name="CromeTest">
+<suite name="Suite"  parallel = "tests" thread-count ="5" verbose= "1">
+	<test name="CromeTest">
 		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="tests.SanityTest" />
-		</classes>
-	</test><!--Test  --> 
+		<groups>
+			<define name="all">
+				<include name="sanity"></include>
+				<include name="func"></include>
+				<include name="integration"></include>
+			</define>
 
-	<test  name="FirefoxTest">
-		<parameter name="browser" value="firefox" />
+			<run>
+				<include name="all"></include>
+			</run>
+		</groups>
+		
 		<classes>
 			<class name="tests.SanityTest" />
+			<class name="tests.FuncTests" />
 		</classes>
-	</test> <!-- Test -->
+	</test><!--Test -->
 	
-	
+
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		
+		<groups>
+			<define name="all">
+				<include name="sanity"></include>
+				<include name="func"></include>
+				<include name="integration"></include>
+			</define>
+
+			<run>
+				<include name="all"></include>
+			</run>
+		</groups>
+		
+		<classes>
+			<class name="tests.SanityTest" />
+			<class name="tests.FuncTests" />
+		</classes>
+	</test> <!--Test -->
+
+
 </suite> <!-- Suite -->

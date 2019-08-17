@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
     <line>
-      <![CDATA[Suite starts]]>
+      <![CDATA[Method start]]>
     </line>
     <line>
       <![CDATA[Method start]]>
     </line>
     <line>
-      <![CDATA[Test is running on chrome]]>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: startB]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
@@ -32,244 +29,7 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: //*[@id="secondepage"]/center/button[1]]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[Let us play!!]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Test]]>
-    </line>
-    <line>
-      <![CDATA[Answer checked on line: 1]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Test]]>
-    </line>
-    <line>
-      <![CDATA[Answer checked on line: 1]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Test]]>
-    </line>
-    <line>
-      <![CDATA[Answer checked on line: 1]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Try again]]>
-    </line>
-    <line>
-      <![CDATA[Sanity test finished!!]]>
-    </line>
-    <line>
-      <![CDATA[End of Method]]>
-    </line>
-    <line>
-      <![CDATA[Method start]]>
-    </line>
-    <line>
-      <![CDATA[Test is running on firefox]]>
-    </line>
-    <line>
       <![CDATA[Start game!!]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: startB]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
@@ -284,52 +44,16 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
       <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
@@ -344,16 +68,16 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+      <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
+      <![CDATA[enter question 2 with B]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[Enter first question]]>
     </line>
     <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
@@ -362,34 +86,10 @@
       <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
@@ -404,16 +104,22 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected:  question number: 3]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
+      <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
     </line>
     <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
@@ -422,43 +128,7 @@
       <![CDATA[text expected:  question number: 3]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.id: nextquest]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
-    </line>
-    <line>
       <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[find locaator: By.xpath: //*[@id="secondepage"]/center/button[1]]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
     </line>
     <line>
       <![CDATA[Let us play!!]]>
@@ -470,10 +140,13 @@
       <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[text expected: Test]]>
+    </line>
+    <line>
+      <![CDATA[Let us play!!]]>
     </line>
     <line>
       <![CDATA[text expected: Test]]>
@@ -482,10 +155,7 @@
       <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
-    </line>
-    <line>
-      <![CDATA[end click]]>
+      <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
       <![CDATA[text expected: Test]]>
@@ -494,10 +164,34 @@
       <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
-      <![CDATA[find locaator: By.id: btnnext]]>
+      <![CDATA[text expected: Test]]>
     </line>
     <line>
-      <![CDATA[end click]]>
+      <![CDATA[Answer checked on line: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Try again]]>
+    </line>
+    <line>
+      <![CDATA[Sanity test finished!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Test]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Answer checked on line: 1]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 2]]>
     </line>
     <line>
       <![CDATA[text expected: Try again]]>
@@ -509,15 +203,617 @@
       <![CDATA[End of Method]]>
     </line>
     <line>
-      <![CDATA[Suite finished!!]]>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 2]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 3]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 3]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 4]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 3]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answer number 4]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 4]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answers in variuse lines]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in line 4]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Test- select for all questions answers in variuse lines]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in variuse lines]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[enter question 2 with B]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[enter question 3 with C]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 3]]>
+    </line>
+    <line>
+      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+    </line>
+    <line>
+      <![CDATA[finished Test check all answers in variuse lines]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="132954" started-at="2019-08-13T10:30:59Z" finished-at="2019-08-13T10:33:12Z">
+  <suite name="Suite" duration-ms="272114" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:46:21Z">
     <groups>
+      <group name="func">
+        <method signature="FuncTests.selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer24EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer34EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer44EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswerVar4EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer24EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer34EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer44EachQ" class="tests.FuncTests"/>
+        <method signature="FuncTests.selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswerVar4EachQ" class="tests.FuncTests"/>
+      </group> <!-- func -->
+      <group name="sanity">
+        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@1b604f19]" name="sanityTest" class="tests.SanityTest"/>
+        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@66a3ffec]" name="sanityTest" class="tests.SanityTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="CromeTest" duration-ms="63531" started-at="2019-08-13T10:30:59Z" finished-at="2019-08-13T10:32:02Z">
+    <test name="CromeTest" duration-ms="242811" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:45:51Z">
       <class name="tests.SanityTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@482f8f11]" name="beforeMethod" is-config="true" duration-ms="2846" started-at="2019-08-13T10:30:59Z" finished-at="2019-08-13T10:31:02Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@1b604f19]" name="beforeMethod" is-config="true" duration-ms="3767" started-at="2019-08-17T07:41:49Z" finished-at="2019-08-17T07:41:52Z">
           <params>
             <param index="0">
               <value>
@@ -530,20 +826,14 @@
               <![CDATA[Method start]]>
             </line>
             <line>
-              <![CDATA[Test is running on chrome]]>
+              <![CDATA[Create driver: chrome]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@482f8f11]" name="sanityTest" duration-ms="58028" started-at="2019-08-13T10:31:02Z" finished-at="2019-08-13T10:32:00Z">
+        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@1b604f19]" name="sanityTest" duration-ms="57910" started-at="2019-08-17T07:41:52Z" finished-at="2019-08-17T07:42:50Z">
           <reporter-output>
             <line>
               <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: startB]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -558,52 +848,10 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
               <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -618,52 +866,10 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
               <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -678,61 +884,13 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
               <![CDATA[text expected:  question number: 3]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: //*[@id="secondepage"]/center/button[1]]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[Let us play!!]]>
@@ -744,34 +902,16 @@
               <![CDATA[Answer checked on line: 1]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Test]]>
             </line>
             <line>
               <![CDATA[Answer checked on line: 1]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Test]]>
             </line>
             <line>
               <![CDATA[Answer checked on line: 1]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Try again]]>
@@ -781,7 +921,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@482f8f11]" name="afterMethod" is-config="true" duration-ms="2641" started-at="2019-08-13T10:32:00Z" finished-at="2019-08-13T10:32:02Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@1b604f19]" name="afterMethod" is-config="true" duration-ms="2675" started-at="2019-08-17T07:42:50Z" finished-at="2019-08-17T07:42:53Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
@@ -789,17 +929,388 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.SanityTest -->
-    </test> <!-- CromeTest -->
-    <test name="FirefoxTest" duration-ms="69377" started-at="2019-08-13T10:32:02Z" finished-at="2019-08-13T10:33:12Z">
-      <class name="tests.SanityTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:tests.SanityTest@27efef64]" name="beforeSuite" is-config="true" duration-ms="7" started-at="2019-08-13T10:30:59Z" finished-at="2019-08-13T10:30:59Z">
+      <class name="tests.FuncTests">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2149" started-at="2019-08-17T07:42:53Z" finished-at="2019-08-17T07:42:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Suite starts]]>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
             </line>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@27efef64]" name="beforeMethod" is-config="true" duration-ms="2792" started-at="2019-08-13T10:32:02Z" finished-at="2019-08-13T10:32:05Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer24EachQ" duration-ms="39862" depends-on-groups="sanity" started-at="2019-08-17T07:42:55Z" finished-at="2019-08-17T07:43:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answer number 2]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
+            </line>
+            <line>
+              <![CDATA[finished Test check all answers in line 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer24EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2602" started-at="2019-08-17T07:43:35Z" finished-at="2019-08-17T07:43:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2105" started-at="2019-08-17T07:43:37Z" finished-at="2019-08-17T07:43:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer34EachQ" duration-ms="39531" depends-on-groups="sanity" started-at="2019-08-17T07:43:40Z" finished-at="2019-08-17T07:44:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answer number 3]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
+            </line>
+            <line>
+              <![CDATA[finished Test check all answers in line 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer34EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2608" started-at="2019-08-17T07:44:19Z" finished-at="2019-08-17T07:44:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2125" started-at="2019-08-17T07:44:22Z" finished-at="2019-08-17T07:44:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer44EachQ" duration-ms="40169" depends-on-groups="sanity" started-at="2019-08-17T07:44:24Z" finished-at="2019-08-17T07:45:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answer number 4]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
+            </line>
+            <line>
+              <![CDATA[finished Test check all answers in line 4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer44EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2626" started-at="2019-08-17T07:45:04Z" finished-at="2019-08-17T07:45:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2168" started-at="2019-08-17T07:45:07Z" finished-at="2019-08-17T07:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswerVar4EachQ" duration-ms="39867" depends-on-groups="sanity" started-at="2019-08-17T07:45:09Z" finished-at="2019-08-17T07:45:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answers in variuse lines]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
+            </line>
+            <line>
+              <![CDATA[finished Test check all answers in variuse lines]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswerVar4EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2628" started-at="2019-08-17T07:45:49Z" finished-at="2019-08-17T07:45:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.FuncTests -->
+    </test> <!-- CromeTest -->
+    <test name="FirefoxTest" duration-ms="272114" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:46:21Z">
+      <class name="tests.FuncTests">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2770" started-at="2019-08-17T07:43:00Z" finished-at="2019-08-17T07:43:03Z">
           <params>
             <param index="0">
               <value>
@@ -812,20 +1323,17 @@
               <![CDATA[Method start]]>
             </line>
             <line>
-              <![CDATA[Test is running on firefox]]>
+              <![CDATA[Create driver: firefox]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@27efef64]" name="sanityTest" duration-ms="63771" started-at="2019-08-13T10:32:05Z" finished-at="2019-08-13T10:33:09Z">
+        <test-method status="PASS" signature="selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer24EachQ" duration-ms="44472" depends-on-groups="sanity" started-at="2019-08-17T07:43:03Z" finished-at="2019-08-17T07:43:47Z">
           <reporter-output>
             <line>
+              <![CDATA[Test- select for all questions answer number 2]]>
+            </line>
+            <line>
               <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: startB]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -840,52 +1348,10 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
               <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -900,52 +1366,10 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
               <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Please type here your question]]>
@@ -960,16 +1384,98 @@
               <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[text expected:  question number: 3]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[finished Test check all answers in line 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer24EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2773" started-at="2019-08-17T07:43:47Z" finished-at="2019-08-17T07:43:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2728" started-at="2019-08-17T07:43:50Z" finished-at="2019-08-17T07:43:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer34EachQ" duration-ms="44594" depends-on-groups="sanity" started-at="2019-08-17T07:43:53Z" finished-at="2019-08-17T07:44:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answer number 3]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
             </line>
             <line>
               <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
@@ -978,43 +1484,288 @@
               <![CDATA[text expected:  question number: 3]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[finished Test check all answers in line 3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer34EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2790" started-at="2019-08-17T07:44:37Z" finished-at="2019-08-17T07:44:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2814" started-at="2019-08-17T07:44:40Z" finished-at="2019-08-17T07:44:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer44EachQ" duration-ms="44417" depends-on-groups="sanity" started-at="2019-08-17T07:44:43Z" finished-at="2019-08-17T07:45:27Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answer number 4]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[Start game!!]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+              <![CDATA[text expected: Please type here your question]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[text expected:  question number: 1]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: /html/body/div[1]/header/img]]>
+              <![CDATA[enter question 1 with A]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[Enter first question]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: nextquest]]>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
             </line>
             <line>
               <![CDATA[text expected: You finished to build the test - lets play!!]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.xpath: //*[@id="secondepage"]/center/button[1]]]>
+              <![CDATA[finished Test check all answers in line 4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswer44EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2883" started-at="2019-08-17T07:45:27Z" finished-at="2019-08-17T07:45:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2740" started-at="2019-08-17T07:45:30Z" finished-at="2019-08-17T07:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
             </line>
             <line>
-              <![CDATA[end click]]>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswerVar4EachQ" duration-ms="44827" depends-on-groups="sanity" started-at="2019-08-17T07:45:33Z" finished-at="2019-08-17T07:46:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test- select for all questions answers in variuse lines]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
+            </line>
+            <line>
+              <![CDATA[finished Test check all answers in variuse lines]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectAnswerVar4EachQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2766" started-at="2019-08-17T07:46:18Z" finished-at="2019-08-17T07:46:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.FuncTests -->
+      <class name="tests.SanityTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@66a3ffec]" name="beforeMethod" is-config="true" duration-ms="5077" started-at="2019-08-17T07:41:49Z" finished-at="2019-08-17T07:41:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@66a3ffec]" name="sanityTest" duration-ms="63637" started-at="2019-08-17T07:41:54Z" finished-at="2019-08-17T07:42:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[enter question 2 with B]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[enter question 3 with C]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 3]]>
+            </line>
+            <line>
+              <![CDATA[text expected: You finished to build the test - lets play!!]]>
             </line>
             <line>
               <![CDATA[Let us play!!]]>
@@ -1026,34 +1777,16 @@
               <![CDATA[Answer checked on line: 1]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Test]]>
             </line>
             <line>
               <![CDATA[Answer checked on line: 1]]>
             </line>
             <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
-            </line>
-            <line>
               <![CDATA[text expected: Test]]>
             </line>
             <line>
               <![CDATA[Answer checked on line: 1]]>
-            </line>
-            <line>
-              <![CDATA[find locaator: By.id: btnnext]]>
-            </line>
-            <line>
-              <![CDATA[end click]]>
             </line>
             <line>
               <![CDATA[text expected: Try again]]>
@@ -1063,20 +1796,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@27efef64]" name="afterMethod" is-config="true" duration-ms="2812" started-at="2019-08-13T10:33:09Z" finished-at="2019-08-13T10:33:12Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@66a3ffec]" name="afterMethod" is-config="true" duration-ms="2805" started-at="2019-08-17T07:42:57Z" finished-at="2019-08-17T07:43:00Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.SanityTest@27efef64]" name="afterSuite" is-config="true" duration-ms="1" started-at="2019-08-13T10:33:12Z" finished-at="2019-08-13T10:33:12Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Suite finished!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
       </class> <!-- tests.SanityTest -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->

@@ -24,7 +24,7 @@ public class SanityTest extends TestUtilities {
 	
 	private String SiteTitle = "SVCOLLEGE TEST";
 	
-	@Test
+	@Test (groups = {"sanity"})
 	public void sanityTest()  {
 		GameSteps steps = new GameSteps(driver);
 		
