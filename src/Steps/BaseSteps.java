@@ -159,5 +159,17 @@ public class BaseSteps {
 			return false;
 		}
 	}
+	
+	protected boolean alertShow() {
+		WebDriverWait wait = new WebDriverWait(driver, 5 /*timeout in seconds*/);
+		if(wait.until(ExpectedConditions.alertIsPresent())==null) {
+		   Reporter.log("alert was not present", true);
+		   return false;
+		}
+		else {
+		   Reporter.log("alert was present",true);
+		   return true;
+		}
+	}
 
 }

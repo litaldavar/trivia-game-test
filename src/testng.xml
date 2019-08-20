@@ -8,17 +8,25 @@
 			<define name="all">
 				<include name="sanity"></include>
 				<include name="func"></include>
+				<include name= "error-handling"></include>
 				<include name="integration"></include>
+			</define>
+			
+			<define name="eh">
+				<include name="sanity"></include>				
+				<include name= "error-handling"></include>
+				
 			</define>
 
 			<run>
-				<include name="all"></include>
+				<include name="eh"></include>
 			</run>
 		</groups>
 		
 		<classes>
 			<class name="tests.SanityTest" />
 			<class name="tests.FuncTests" />
+			<class name="tests.ErrorHTests"/>
 		</classes>
 	</test><!--Test -->
 	
@@ -30,19 +38,28 @@
 			<define name="all">
 				<include name="sanity"></include>
 				<include name="func"></include>
+				<include name= "error-handling"></include>
 				<include name="integration"></include>
 			</define>
+			
+			<define name="eh">
+				<include name="sanity"></include>				
+				<include name= "error-handling"></include>
+				
+			</define>
+			
 
 			<run>
-				<include name="all"></include>
+				<include name="eh"></include>
 			</run>
 		</groups>
 		
 		<classes>
 			<class name="tests.SanityTest" />
 			<class name="tests.FuncTests" />
+			<class name="tests.ErrorHTests"/>
 		</classes>
-	</test> <!--Test -->
+	</test> 
 
 
 </suite> <!-- Suite -->

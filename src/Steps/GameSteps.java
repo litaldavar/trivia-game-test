@@ -156,4 +156,9 @@ public class GameSteps extends BaseSteps {
 	public void clickQuit() {
 		click(QuitGameButton);
 	}
+	
+	/**confirm there was an Alert*/
+	public boolean isAlert() {
+		return alertShow();
+	}
 }

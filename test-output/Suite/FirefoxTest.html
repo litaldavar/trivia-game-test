@@ -55,18 +55,211 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 17 10:41:48 IDT 2019</td>
+<td>Started on:</td><td>Tue Aug 20 17:41:17 IDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>272 seconds (272114 ms)</td>
+<tr><td>Total time:</td><td>206 seconds (206552 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>all func integration sanity </td>
+<td>Included groups:</td><td>error-handling eh sanity </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ErrorHTests.numberAsAnswer()'><b>numberAsAnswer</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-861572090" onClick='toggleBox("Output-861572090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-861572090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-861572090">
+number as an answer in setup<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+fill answer as 1<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16028, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+	at Steps.GameSteps.isAlert(GameSteps.java:162)
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace861572090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace861572090'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16028, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+	at Steps.GameSteps.isAlert(GameSteps.java:162)
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>23</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.overMaxCharsQ()'><b>overMaxCharsQ</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-887301503" onClick='toggleBox("Output-887301503", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-887301503" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-887301503">
+Over max characters in a question<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace887301503", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace887301503'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>8</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.skipFillingAQuestion()'><b>skipFillingAQuestion</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-608428676" onClick='toggleBox("Output-608428676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-608428676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-608428676">
+Skip filling a question<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2064, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+	at Steps.GameSteps.isAlert(GameSteps.java:162)
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608428676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608428676'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2064, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+	at Steps.GameSteps.isAlert(GameSteps.java:162)
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>25</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,11 +268,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
-<a href="#Output-1823124046" onClick='toggleBox("Output-1823124046", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.ErrorHTests.answerNotChecked()'><b>answerNotChecked</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1935361455" onClick='toggleBox("Output-1935361455", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1823124046" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1823124046">
+<a href="#Output-1935361455" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1935361455">
+Answer at setup is not checked<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+alert was present<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.changeAnswerInSetup()'><b>changeAnswerInSetup</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1369846244" onClick='toggleBox("Output-1369846244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1369846244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1369846244">
+Change selection of answer in setup stage<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
+<a href="#Output-1239832552" onClick='toggleBox("Output-1239832552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1239832552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1239832552">
 Start game!!<br/>
 text expected: Please type here your question<br/>
 text expected:  question number: 1<br/>
@@ -112,140 +346,8 @@ Sanity test finished!!<br/>
 </div>
 </td>
 <td></td>
-<td>63</td>
-<td>tests.SanityTest@66a3ffec</td></tr>
-<tr>
-<td title='tests.FuncTests.selectAnswer24EachQ()'><b>selectAnswer24EachQ</b><br>Test class: tests.FuncTests<br/>
-<a href="#Output-1892163971" onClick='toggleBox("Output-1892163971", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1892163971" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1892163971">
-Test- select for all questions answer number 2<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with A<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 1<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 2<br/>
-enter question 2 with B<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 2<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 3<br/>
-enter question 3 with C<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 3<br/>
-text expected: You finished to build the test - lets play!!<br/>
-finished Test check all answers in line 2<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>tests.FuncTests@77caeb3e</td></tr>
-<tr>
-<td title='tests.FuncTests.selectAnswer34EachQ()'><b>selectAnswer34EachQ</b><br>Test class: tests.FuncTests<br/>
-<a href="#Output-1310601893" onClick='toggleBox("Output-1310601893", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1310601893" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1310601893">
-Test- select for all questions answer number 3<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with A<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 1<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 2<br/>
-enter question 2 with B<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 2<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 3<br/>
-enter question 3 with C<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 3<br/>
-text expected: You finished to build the test - lets play!!<br/>
-finished Test check all answers in line 3<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>tests.FuncTests@77caeb3e</td></tr>
-<tr>
-<td title='tests.FuncTests.selectAnswer44EachQ()'><b>selectAnswer44EachQ</b><br>Test class: tests.FuncTests<br/>
-<a href="#Output-55104618" onClick='toggleBox("Output-55104618", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-55104618" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-55104618">
-Test- select for all questions answer number 4<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with A<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 1<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 2<br/>
-enter question 2 with B<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 2<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 3<br/>
-enter question 3 with C<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 3<br/>
-text expected: You finished to build the test - lets play!!<br/>
-finished Test check all answers in line 4<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>tests.FuncTests@77caeb3e</td></tr>
-<tr>
-<td title='tests.FuncTests.selectAnswerVar4EachQ()'><b>selectAnswerVar4EachQ</b><br>Test class: tests.FuncTests<br/>
-<a href="#Output-1266108775" onClick='toggleBox("Output-1266108775", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1266108775" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266108775">
-Test- select for all questions answers in variuse lines<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with A<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 1<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 2<br/>
-enter question 2 with B<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 2<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 3<br/>
-enter question 3 with C<br/>
-Enter first question<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 3<br/>
-text expected: You finished to build the test - lets play!!<br/>
-finished Test check all answers in variuse lines<br/>
-</div>
-</td>
-<td></td>
-<td>44</td>
-<td>tests.FuncTests@77caeb3e</td></tr>
+<td>62</td>
+<td>tests.SanityTest@1e88b3c</td></tr>
 </table><p>
 </body>
 </html>

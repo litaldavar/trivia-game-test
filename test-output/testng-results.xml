@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="6" ignored="18" total="30" passed="6">
   <reporter-output>
     <line>
       <![CDATA[Method start]]>
@@ -8,12 +8,12 @@
       <![CDATA[Method start]]>
     </line>
     <line>
-      <![CDATA[Create driver: chrome]]>
-    </line>
-    <line>
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
       <![CDATA[Start game!!]]>
     </line>
     <line>
@@ -68,6 +68,12 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
       <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
@@ -78,12 +84,6 @@
     </line>
     <line>
       <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
@@ -146,6 +146,9 @@
       <![CDATA[text expected: Test]]>
     </line>
     <line>
+      <![CDATA[Answer checked on line: 1]]>
+    </line>
+    <line>
       <![CDATA[Let us play!!]]>
     </line>
     <line>
@@ -155,9 +158,6 @@
       <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
-      <![CDATA[Answer checked on line: 1]]>
-    </line>
-    <line>
       <![CDATA[text expected: Test]]>
     </line>
     <line>
@@ -176,10 +176,10 @@
       <![CDATA[Sanity test finished!!]]>
     </line>
     <line>
-      <![CDATA[text expected: Test]]>
+      <![CDATA[End of Method]]>
     </line>
     <line>
-      <![CDATA[End of Method]]>
+      <![CDATA[text expected: Test]]>
     </line>
     <line>
       <![CDATA[Method start]]>
@@ -191,7 +191,7 @@
       <![CDATA[Answer checked on line: 1]]>
     </line>
     <line>
-      <![CDATA[Test- select for all questions answer number 2]]>
+      <![CDATA[Answer at setup is not checked]]>
     </line>
     <line>
       <![CDATA[text expected: Try again]]>
@@ -200,7 +200,22 @@
       <![CDATA[Sanity test finished!!]]>
     </line>
     <line>
+      <![CDATA[Start game!!]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
       <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
     </line>
     <line>
       <![CDATA[Method start]]>
@@ -209,130 +224,34 @@
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
-      <![CDATA[Start game!!]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[enter question 1 with A]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[Test- select for all questions answer number 2]]>
-    </line>
-    <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
       <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[Answer at setup is not checked]]>
+    </line>
+    <line>
+      <![CDATA[alert was present]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[enter question 1 with A]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in line 2]]>
     </line>
     <line>
       <![CDATA[End of Method]]>
     </line>
     <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+      <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
-      <![CDATA[text expected:  question number: 3]]>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
+    </line>
+    <line>
+      <![CDATA[Enter first question]]>
     </line>
     <line>
       <![CDATA[Method start]]>
@@ -341,7 +260,13 @@
       <![CDATA[Create driver: chrome]]>
     </line>
     <line>
-      <![CDATA[Test- select for all questions answer number 3]]>
+      <![CDATA[Change selection of answer in setup stage]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -359,10 +284,7 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in line 2]]>
+      <![CDATA[alert was present]]>
     </line>
     <line>
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
@@ -380,19 +302,7 @@
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
-      <![CDATA[Test- select for all questions answer number 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
+      <![CDATA[Change selection of answer in setup stage]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -410,7 +320,7 @@
       <![CDATA[Enter first question]]>
     </line>
     <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+      <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
       <![CDATA[text expected:  question number: 2]]>
@@ -420,48 +330,6 @@
     </line>
     <line>
       <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in line 3]]>
     </line>
     <line>
       <![CDATA[End of Method]]>
@@ -473,25 +341,7 @@
       <![CDATA[Create driver: chrome]]>
     </line>
     <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[Test- select for all questions answer number 4]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
+      <![CDATA[number as an answer in setup]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -515,10 +365,13 @@
       <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
+      <![CDATA[fill answer as 1]]>
     </line>
     <line>
-      <![CDATA[finished Test check all answers in line 3]]>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
       <![CDATA[End of Method]]>
@@ -530,25 +383,7 @@
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[Test- select for all questions answer number 4]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
+      <![CDATA[number as an answer in setup]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -564,54 +399,6 @@
     </line>
     <line>
       <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in line 4]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
       <![CDATA[End of Method]]>
@@ -623,7 +410,16 @@
       <![CDATA[Create driver: chrome]]>
     </line>
     <line>
-      <![CDATA[Test- select for all questions answers in variuse lines]]>
+      <![CDATA[Over max characters in a question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[fill answer as 1]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -632,13 +428,34 @@
       <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
-      <![CDATA[text expected:  question number: 3]]>
+      <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
-      <![CDATA[enter question 3 with C]]>
+      <![CDATA[entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
     </line>
     <line>
       <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Skip filling a question]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
@@ -651,45 +468,6 @@
     </line>
     <line>
       <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 1]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in line 4]]>
-    </line>
-    <line>
-      <![CDATA[End of Method]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
     </line>
     <line>
       <![CDATA[Method start]]>
@@ -698,19 +476,52 @@
       <![CDATA[Create driver: firefox]]>
     </line>
     <line>
-      <![CDATA[Test- select for all questions answers in variuse lines]]>
+      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 1]]>
+    </line>
+    <line>
+      <![CDATA[Over max characters in a question]]>
+    </line>
+    <line>
+      <![CDATA[Start game!!]]>
     </line>
     <line>
       <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
-      <![CDATA[text expected:  question number: 3]]>
+      <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
-      <![CDATA[enter question 3 with C]]>
+      <![CDATA[entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]>
+    </line>
+    <line>
+      <![CDATA[enter question 1 with A]]>
     </line>
     <line>
       <![CDATA[Enter first question]]>
+    </line>
+    <line>
+      <![CDATA[text expected: Please type here your question]]>
+    </line>
+    <line>
+      <![CDATA[text expected:  question number: 2]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
+    </line>
+    <line>
+      <![CDATA[Method start]]>
+    </line>
+    <line>
+      <![CDATA[Create driver: firefox]]>
+    </line>
+    <line>
+      <![CDATA[Skip filling a question]]>
+    </line>
+    <line>
+      <![CDATA[End of Method]]>
     </line>
     <line>
       <![CDATA[Start game!!]]>
@@ -731,89 +542,40 @@
       <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
     </line>
     <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
       <![CDATA[text expected:  question number: 1]]>
     </line>
     <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in variuse lines]]>
-    </line>
-    <line>
-      <![CDATA[End of Method]]>
-    </line>
-    <line>
       <![CDATA[text expected: Please type here your question]]>
     </line>
     <line>
       <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[enter question 2 with B]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 2]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please type here your question]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[enter question 3 with C]]>
-    </line>
-    <line>
-      <![CDATA[Enter first question]]>
-    </line>
-    <line>
-      <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-    </line>
-    <line>
-      <![CDATA[text expected:  question number: 3]]>
-    </line>
-    <line>
-      <![CDATA[text expected: You finished to build the test - lets play!!]]>
-    </line>
-    <line>
-      <![CDATA[finished Test check all answers in variuse lines]]>
     </line>
     <line>
       <![CDATA[End of Method]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="272114" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:46:21Z">
+  <suite name="Suite" duration-ms="206552" started-at="2019-08-20T14:41:17Z" finished-at="2019-08-20T14:44:43Z">
     <groups>
-      <group name="func">
-        <method signature="FuncTests.selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer24EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer34EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer44EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswerVar4EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer24EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer34EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer44EachQ" class="tests.FuncTests"/>
-        <method signature="FuncTests.selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswerVar4EachQ" class="tests.FuncTests"/>
-      </group> <!-- func -->
+      <group name="error-handling">
+        <method signature="ErrorHTests.answerNotChecked()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="answerNotChecked" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.changeAnswerInSetup()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="changeAnswerInSetup" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.numberAsAnswer()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="numberAsAnswer" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.overMaxCharsQ()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="overMaxCharsQ" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.skipFillingAQuestion()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="skipFillingAQuestion" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.answerNotChecked()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="answerNotChecked" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.changeAnswerInSetup()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="changeAnswerInSetup" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.numberAsAnswer()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="numberAsAnswer" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.overMaxCharsQ()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="overMaxCharsQ" class="tests.ErrorHTests"/>
+        <method signature="ErrorHTests.skipFillingAQuestion()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="skipFillingAQuestion" class="tests.ErrorHTests"/>
+      </group> <!-- error-handling -->
       <group name="sanity">
-        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@1b604f19]" name="sanityTest" class="tests.SanityTest"/>
-        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@66a3ffec]" name="sanityTest" class="tests.SanityTest"/>
+        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@4cc0edeb]" name="sanityTest" class="tests.SanityTest"/>
+        <method signature="SanityTest.sanityTest()[pri:0, instance:tests.SanityTest@1e88b3c]" name="sanityTest" class="tests.SanityTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="CromeTest" duration-ms="242811" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:45:51Z">
+    <test name="CromeTest" duration-ms="179077" started-at="2019-08-20T14:41:17Z" finished-at="2019-08-20T14:44:16Z">
       <class name="tests.SanityTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@1b604f19]" name="beforeMethod" is-config="true" duration-ms="3767" started-at="2019-08-17T07:41:49Z" finished-at="2019-08-17T07:41:52Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@4cc0edeb]" name="beforeMethod" is-config="true" duration-ms="3229" started-at="2019-08-20T14:41:17Z" finished-at="2019-08-20T14:41:20Z">
           <params>
             <param index="0">
               <value>
@@ -830,7 +592,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@1b604f19]" name="sanityTest" duration-ms="57910" started-at="2019-08-17T07:41:52Z" finished-at="2019-08-17T07:42:50Z">
+        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@4cc0edeb]" name="sanityTest" duration-ms="57399" started-at="2019-08-20T14:41:20Z" finished-at="2019-08-20T14:42:17Z">
           <reporter-output>
             <line>
               <![CDATA[Start game!!]]>
@@ -921,7 +683,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@1b604f19]" name="afterMethod" is-config="true" duration-ms="2675" started-at="2019-08-17T07:42:50Z" finished-at="2019-08-17T07:42:53Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@4cc0edeb]" name="afterMethod" is-config="true" duration-ms="2642" started-at="2019-08-20T14:42:17Z" finished-at="2019-08-20T14:42:20Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
@@ -929,8 +691,8 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.SanityTest -->
-      <class name="tests.FuncTests">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2149" started-at="2019-08-17T07:42:53Z" finished-at="2019-08-17T07:42:55Z">
+      <class name="tests.ErrorHTests">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@457e2f02]" name="beforeMethod" is-config="true" duration-ms="2181" started-at="2019-08-20T14:42:20Z" finished-at="2019-08-20T14:42:22Z">
           <params>
             <param index="0">
               <value>
@@ -947,10 +709,65 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer24EachQ" duration-ms="39862" depends-on-groups="sanity" started-at="2019-08-17T07:42:55Z" finished-at="2019-08-17T07:43:35Z">
+        <test-method status="PASS" signature="answerNotChecked()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="answerNotChecked" duration-ms="14247" depends-on-groups="sanity" started-at="2019-08-20T14:42:22Z" finished-at="2019-08-20T14:42:36Z">
           <reporter-output>
             <line>
-              <![CDATA[Test- select for all questions answer number 2]]>
+              <![CDATA[Answer at setup is not checked]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[alert was present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- answerNotChecked -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="afterMethod" is-config="true" duration-ms="2643" started-at="2019-08-20T14:42:36Z" finished-at="2019-08-20T14:42:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@457e2f02]" name="beforeMethod" is-config="true" duration-ms="2162" started-at="2019-08-20T14:42:39Z" finished-at="2019-08-20T14:42:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="changeAnswerInSetup()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="changeAnswerInSetup" duration-ms="23724" depends-on-groups="sanity" started-at="2019-08-20T14:42:41Z" finished-at="2019-08-20T14:43:05Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Change selection of answer in setup stage]]>
             </line>
             <line>
               <![CDATA[Start game!!]]>
@@ -979,52 +796,16 @@
             <line>
               <![CDATA[text expected:  question number: 2]]>
             </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 2]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- selectAnswer24EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2602" started-at="2019-08-17T07:43:35Z" finished-at="2019-08-17T07:43:37Z">
+        </test-method> <!-- changeAnswerInSetup -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="afterMethod" is-config="true" duration-ms="2623" started-at="2019-08-20T14:43:05Z" finished-at="2019-08-20T14:43:08Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2105" started-at="2019-08-17T07:43:37Z" finished-at="2019-08-17T07:43:40Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@457e2f02]" name="beforeMethod" is-config="true" duration-ms="2213" started-at="2019-08-20T14:43:08Z" finished-at="2019-08-20T14:43:10Z">
           <params>
             <param index="0">
               <value>
@@ -1041,10 +822,235 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer34EachQ" duration-ms="39531" depends-on-groups="sanity" started-at="2019-08-17T07:43:40Z" finished-at="2019-08-17T07:44:19Z">
+        <test-method status="FAIL" signature="numberAsAnswer()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="numberAsAnswer" duration-ms="22460" depends-on-groups="sanity" started-at="2019-08-20T14:43:10Z" finished-at="2019-08-20T14:43:32Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1e99efcc84a008efbd40967a7df6b23f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1e99efcc84a008efbd40967a7df6b23f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+at Steps.GameSteps.isAlert(GameSteps.java:162)
+at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
-              <![CDATA[Test- select for all questions answer number 3]]>
+              <![CDATA[number as an answer in setup]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[fill answer as 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- numberAsAnswer -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="afterMethod" is-config="true" duration-ms="2627" started-at="2019-08-20T14:43:32Z" finished-at="2019-08-20T14:43:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@457e2f02]" name="beforeMethod" is-config="true" duration-ms="2157" started-at="2019-08-20T14:43:35Z" finished-at="2019-08-20T14:43:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="overMaxCharsQ()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="overMaxCharsQ" duration-ms="7645" depends-on-groups="sanity" started-at="2019-08-20T14:43:37Z" finished-at="2019-08-20T14:43:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message didn't show - no error message when max characters in question is over 50 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message didn't show - no error message when max characters in question is over 50 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Over max characters in a question]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- overMaxCharsQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="afterMethod" is-config="true" duration-ms="2664" started-at="2019-08-20T14:43:45Z" finished-at="2019-08-20T14:43:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@457e2f02]" name="beforeMethod" is-config="true" duration-ms="2164" started-at="2019-08-20T14:43:47Z" finished-at="2019-08-20T14:43:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="skipFillingAQuestion()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="skipFillingAQuestion" duration-ms="23602" depends-on-groups="sanity" started-at="2019-08-20T14:43:49Z" finished-at="2019-08-20T14:44:13Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 246593159d647c9a7d90f5a2eb07b309]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 246593159d647c9a7d90f5a2eb07b309
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+at Steps.GameSteps.isAlert(GameSteps.java:162)
+at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Skip filling a question]]>
             </line>
             <line>
               <![CDATA[Start game!!]]>
@@ -1073,622 +1079,20 @@
             <line>
               <![CDATA[text expected:  question number: 2]]>
             </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 3]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- selectAnswer34EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2608" started-at="2019-08-17T07:44:19Z" finished-at="2019-08-17T07:44:22Z">
+        </test-method> <!-- skipFillingAQuestion -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@457e2f02]" name="afterMethod" is-config="true" duration-ms="2654" started-at="2019-08-20T14:44:13Z" finished-at="2019-08-20T14:44:16Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2125" started-at="2019-08-17T07:44:22Z" finished-at="2019-08-17T07:44:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: chrome]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswer44EachQ" duration-ms="40169" depends-on-groups="sanity" started-at="2019-08-17T07:44:24Z" finished-at="2019-08-17T07:45:04Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answer number 4]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswer44EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2626" started-at="2019-08-17T07:45:04Z" finished-at="2019-08-17T07:45:07Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@7823a2f9]" name="beforeMethod" is-config="true" duration-ms="2168" started-at="2019-08-17T07:45:07Z" finished-at="2019-08-17T07:45:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: chrome]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@7823a2f9]" name="selectAnswerVar4EachQ" duration-ms="39867" depends-on-groups="sanity" started-at="2019-08-17T07:45:09Z" finished-at="2019-08-17T07:45:49Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answers in variuse lines]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in variuse lines]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswerVar4EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@7823a2f9]" name="afterMethod" is-config="true" duration-ms="2628" started-at="2019-08-17T07:45:49Z" finished-at="2019-08-17T07:45:51Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.FuncTests -->
+      </class> <!-- tests.ErrorHTests -->
     </test> <!-- CromeTest -->
-    <test name="FirefoxTest" duration-ms="272114" started-at="2019-08-17T07:41:48Z" finished-at="2019-08-17T07:46:21Z">
-      <class name="tests.FuncTests">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2770" started-at="2019-08-17T07:43:00Z" finished-at="2019-08-17T07:43:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: firefox]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer24EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer24EachQ" duration-ms="44472" depends-on-groups="sanity" started-at="2019-08-17T07:43:03Z" finished-at="2019-08-17T07:43:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answer number 2]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswer24EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2773" started-at="2019-08-17T07:43:47Z" finished-at="2019-08-17T07:43:50Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2728" started-at="2019-08-17T07:43:50Z" finished-at="2019-08-17T07:43:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: firefox]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer34EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer34EachQ" duration-ms="44594" depends-on-groups="sanity" started-at="2019-08-17T07:43:53Z" finished-at="2019-08-17T07:44:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answer number 3]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswer34EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2790" started-at="2019-08-17T07:44:37Z" finished-at="2019-08-17T07:44:40Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2814" started-at="2019-08-17T07:44:40Z" finished-at="2019-08-17T07:44:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: firefox]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswer44EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswer44EachQ" duration-ms="44417" depends-on-groups="sanity" started-at="2019-08-17T07:44:43Z" finished-at="2019-08-17T07:45:27Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answer number 4]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in line 4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswer44EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2883" started-at="2019-08-17T07:45:27Z" finished-at="2019-08-17T07:45:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FuncTests@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="2740" started-at="2019-08-17T07:45:30Z" finished-at="2019-08-17T07:45:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Method start]]>
-            </line>
-            <line>
-              <![CDATA[Create driver: firefox]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="selectAnswerVar4EachQ()[pri:0, instance:tests.FuncTests@77caeb3e]" name="selectAnswerVar4EachQ" duration-ms="44827" depends-on-groups="sanity" started-at="2019-08-17T07:45:33Z" finished-at="2019-08-17T07:46:18Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test- select for all questions answers in variuse lines]]>
-            </line>
-            <line>
-              <![CDATA[Start game!!]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[enter question 1 with A]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 1]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[enter question 2 with B]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 2]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please type here your question]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[enter question 3 with C]]>
-            </line>
-            <line>
-              <![CDATA[Enter first question]]>
-            </line>
-            <line>
-              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
-            </line>
-            <line>
-              <![CDATA[text expected:  question number: 3]]>
-            </line>
-            <line>
-              <![CDATA[text expected: You finished to build the test - lets play!!]]>
-            </line>
-            <line>
-              <![CDATA[finished Test check all answers in variuse lines]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- selectAnswerVar4EachQ -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.FuncTests@77caeb3e]" name="afterMethod" is-config="true" duration-ms="2766" started-at="2019-08-17T07:46:18Z" finished-at="2019-08-17T07:46:21Z">
-          <reporter-output>
-            <line>
-              <![CDATA[End of Method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.FuncTests -->
+    <test name="FirefoxTest" duration-ms="206552" started-at="2019-08-20T14:41:17Z" finished-at="2019-08-20T14:44:43Z">
       <class name="tests.SanityTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@66a3ffec]" name="beforeMethod" is-config="true" duration-ms="5077" started-at="2019-08-17T07:41:49Z" finished-at="2019-08-17T07:41:54Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.SanityTest@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="5359" started-at="2019-08-20T14:41:17Z" finished-at="2019-08-20T14:41:22Z">
           <params>
             <param index="0">
               <value>
@@ -1705,7 +1109,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@66a3ffec]" name="sanityTest" duration-ms="63637" started-at="2019-08-17T07:41:54Z" finished-at="2019-08-17T07:42:57Z">
+        <test-method status="PASS" signature="sanityTest()[pri:0, instance:tests.SanityTest@1e88b3c]" name="sanityTest" duration-ms="62945" started-at="2019-08-20T14:41:22Z" finished-at="2019-08-20T14:42:25Z">
           <reporter-output>
             <line>
               <![CDATA[Start game!!]]>
@@ -1796,7 +1200,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@66a3ffec]" name="afterMethod" is-config="true" duration-ms="2805" started-at="2019-08-17T07:42:57Z" finished-at="2019-08-17T07:43:00Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SanityTest@1e88b3c]" name="afterMethod" is-config="true" duration-ms="3062" started-at="2019-08-20T14:42:25Z" finished-at="2019-08-20T14:42:28Z">
           <reporter-output>
             <line>
               <![CDATA[End of Method]]>
@@ -1804,6 +1208,404 @@
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.SanityTest -->
+      <class name="tests.ErrorHTests">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@42d80b78]" name="beforeMethod" is-config="true" duration-ms="3882" started-at="2019-08-20T14:42:28Z" finished-at="2019-08-20T14:42:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="answerNotChecked()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="answerNotChecked" duration-ms="16659" depends-on-groups="sanity" started-at="2019-08-20T14:42:32Z" finished-at="2019-08-20T14:42:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Answer at setup is not checked]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[alert was present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- answerNotChecked -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="afterMethod" is-config="true" duration-ms="3251" started-at="2019-08-20T14:42:49Z" finished-at="2019-08-20T14:42:52Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@42d80b78]" name="beforeMethod" is-config="true" duration-ms="3853" started-at="2019-08-20T14:42:52Z" finished-at="2019-08-20T14:42:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="changeAnswerInSetup()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="changeAnswerInSetup" duration-ms="25658" depends-on-groups="sanity" started-at="2019-08-20T14:42:56Z" finished-at="2019-08-20T14:43:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Change selection of answer in setup stage]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- changeAnswerInSetup -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="afterMethod" is-config="true" duration-ms="3128" started-at="2019-08-20T14:43:21Z" finished-at="2019-08-20T14:43:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@42d80b78]" name="beforeMethod" is-config="true" duration-ms="3852" started-at="2019-08-20T14:43:24Z" finished-at="2019-08-20T14:43:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="numberAsAnswer()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="numberAsAnswer" duration-ms="23850" depends-on-groups="sanity" started-at="2019-08-20T14:43:28Z" finished-at="2019-08-20T14:43:52Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16028, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16028, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+at Steps.GameSteps.isAlert(GameSteps.java:162)
+at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[number as an answer in setup]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[fill answer as 1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- numberAsAnswer -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="afterMethod" is-config="true" duration-ms="3243" started-at="2019-08-20T14:43:52Z" finished-at="2019-08-20T14:43:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@42d80b78]" name="beforeMethod" is-config="true" duration-ms="3876" started-at="2019-08-20T14:43:55Z" finished-at="2019-08-20T14:43:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="overMaxCharsQ()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="overMaxCharsQ" duration-ms="8192" depends-on-groups="sanity" started-at="2019-08-20T14:43:59Z" finished-at="2019-08-20T14:44:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message didn't show - no error message when max characters in question is over 50 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message didn't show - no error message when max characters in question is over 50 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Over max characters in a question]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- overMaxCharsQ -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="afterMethod" is-config="true" duration-ms="3138" started-at="2019-08-20T14:44:08Z" finished-at="2019-08-20T14:44:11Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ErrorHTests@42d80b78]" name="beforeMethod" is-config="true" duration-ms="3856" started-at="2019-08-20T14:44:11Z" finished-at="2019-08-20T14:44:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Method start]]>
+            </line>
+            <line>
+              <![CDATA[Create driver: firefox]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="skipFillingAQuestion()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="skipFillingAQuestion" duration-ms="25585" depends-on-groups="sanity" started-at="2019-08-20T14:44:15Z" finished-at="2019-08-20T14:44:40Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2064, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-CFDBD86', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2064, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Steps.BaseSteps.alertShow(BaseSteps.java:165)
+at Steps.GameSteps.isAlert(GameSteps.java:162)
+at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Skip filling a question]]>
+            </line>
+            <line>
+              <![CDATA[Start game!!]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[enter question 1 with A]]>
+            </line>
+            <line>
+              <![CDATA[Enter first question]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please enter 4 possible answers and Mark the right one! ]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 1]]>
+            </line>
+            <line>
+              <![CDATA[text expected: Please type here your question]]>
+            </line>
+            <line>
+              <![CDATA[text expected:  question number: 2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- skipFillingAQuestion -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.ErrorHTests@42d80b78]" name="afterMethod" is-config="true" duration-ms="3129" started-at="2019-08-20T14:44:40Z" finished-at="2019-08-20T14:44:43Z">
+          <reporter-output>
+            <line>
+              <![CDATA[End of Method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.ErrorHTests -->
     </test> <!-- FirefoxTest -->
   </suite> <!-- Suite -->
 </testng-results>

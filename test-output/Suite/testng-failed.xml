@@ -5,17 +5,19 @@
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
-        <include name="all"/>
+        <include name="eh"/>
       </run>
     </groups>
     <classes>
-      <class name="tests.FuncTests">
+      <class name="tests.ErrorHTests">
         <methods>
+          <include name="overMaxCharsQ"/>
+          <include name="skipFillingAQuestion"/>
+          <include name="numberAsAnswer"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="selectAnswerVar4EachQ"/>
         </methods>
-      </class> <!-- tests.FuncTests -->
+      </class> <!-- tests.ErrorHTests -->
       <class name="tests.SanityTest">
         <methods>
           <include name="beforeMethod"/>
@@ -29,17 +31,19 @@
     <parameter name="browser" value="firefox"/>
     <groups>
       <run>
-        <include name="all"/>
+        <include name="eh"/>
       </run>
     </groups>
     <classes>
-      <class name="tests.FuncTests">
+      <class name="tests.ErrorHTests">
         <methods>
+          <include name="overMaxCharsQ"/>
+          <include name="skipFillingAQuestion"/>
+          <include name="numberAsAnswer"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="selectAnswerVar4EachQ"/>
         </methods>
-      </class> <!-- tests.FuncTests -->
+      </class> <!-- tests.ErrorHTests -->
       <class name="tests.SanityTest">
         <methods>
           <include name="beforeMethod"/>
