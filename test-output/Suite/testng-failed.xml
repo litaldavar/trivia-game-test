@@ -13,9 +13,12 @@
         <methods>
           <include name="overMaxCharsQ"/>
           <include name="skipFillingAQuestion"/>
+          <include name="QinAnotherLang"/>
+          <include name="lastQback42Q"/>
           <include name="numberAsAnswer"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="answersAfterLastQBack"/>
         </methods>
       </class> <!-- tests.ErrorHTests -->
       <class name="tests.SanityTest">
@@ -39,9 +42,12 @@
         <methods>
           <include name="overMaxCharsQ"/>
           <include name="skipFillingAQuestion"/>
+          <include name="QinAnotherLang"/>
+          <include name="lastQback42Q"/>
           <include name="numberAsAnswer"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="answersAfterLastQBack"/>
         </methods>
       </class> <!-- tests.ErrorHTests -->
       <class name="tests.SanityTest">

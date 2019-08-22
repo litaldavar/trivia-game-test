@@ -161,4 +161,7 @@ public class GameSteps extends BaseSteps {
 	public boolean isAlert() {
 		return alertShow();
 	}
+	
+	
+	
 }

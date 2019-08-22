@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -55,7 +56,7 @@ public class BaseSteps {
 						(timeOutInSeconds.length > 0 ? timeOutInSeconds[0] : null));
 				break;
 			} catch (StaleElementReferenceException e) {
-				Reporter.log(e.getMessage() , true);
+				Reporter.log(e.getMessage(), true);
 			}
 			attempts++;
 		}
@@ -63,113 +64,121 @@ public class BaseSteps {
 
 	/** Click on element with given locator when its visible */
 	protected void click(By locator) {
-		
+
 		waitForVisibilityOf(locator, 5);
 		WebElement e = driver.findElement(locator);
 		if (e == null) {
 			Reporter.log("Error element not found " + locator.toString(), true);
-			
+
 		}
-		//Reporter.log(e.getTagName(), true);
+		// Reporter.log(e.getTagName(), true);
 		e.click();
-		
+
 	}
-	
+
 	protected void sleep(int m) {
 		sleep(m);
 	}
-	
+
 	/** Find element using given locator */
 	protected WebElement find(By locator) {
 		WebElement e = driver.findElement(locator);
-		if(e == null) {
-			Reporter.log("Error element not found",true);
+		if (e == null) {
+			Reporter.log("Error element not found", true);
 		}
 		return driver.findElement(locator);
 
 	}
-	
+
 	/** Type given text into element with given locator */
 	protected void type(String text, By locator) {
 		waitForVisibilityOf(locator, 5);
 		find(locator).sendKeys(text);
 	}
-	
+
 	/** Find all elements using given locator */
 	protected List<WebElement> findAll(By locator) {
 		return driver.findElements(locator);
 	}
-	
+
 	/** Fill answer line with answer text */
-	protected void fillAnswer(String answer , int line , By locator) {
+	protected void fillAnswer(String answer, int line, By locator) {
 		List<WebElement> aList = findAll(locator);
 		int aSize = aList.size();
-		if( aSize >0 && line < aSize) {
-			aList.get(line).sendKeys(answer);			
-		}
-		else {
-			Reporter.log("Answer Line was not found" , true);
+		if (aSize > 0 && line < aSize) {
+			aList.get(line).sendKeys(answer);
+		} else {
+			Reporter.log("Answer Line was not found", true);
 		}
 	}
-	
+
 	/** Confirm answer in a specific line answer */
-	protected boolean confirmAnswerText(String answer , int line , By locator) {
+	protected boolean confirmAnswerText(String answer, int line, By locator) {
 		List<WebElement> aList = findAll(locator);
 		int aSize = aList.size();
-		if( aSize >0 && line < aSize) {
-			if(aList.get(line).getAttribute("value").intern() == answer) {
+		if (aSize > 0 && line < aSize) {
+			if (aList.get(line).getAttribute("value").intern() == answer) {
 				return true;
-			}
-			else {
+			} else {
 				return false;
 			}
-		}
-		else {
-			Reporter.log("Answer Line was not found" , true);
+		} else {
+			Reporter.log("Answer Line was not found", true);
 			return false;
 		}
 	}
-	
-	/** choose radio button for the correct answer*/
-	protected void checkAnswer(int line , By locator) {
+
+	/** choose radio button for the correct answer */
+	protected void checkAnswer(int line, By locator) {
 		List<WebElement> aList = findAll(locator);
 		int aSize = aList.size();
-		if( aSize >0 && line < aSize) {
-			aList.get(line).click();			
-		}
-		else {
-			Reporter.log("Answer Radio button Line was not found" , true);
+		if (aSize > 0 && line < aSize) {
+			aList.get(line).click();
+		} else {
+			Reporter.log("Answer Radio button Line was not found", true);
 		}
 	}
-	
-	/** confirm radio button checked*/
-	protected boolean confirmAnswerRadio(int line , By locator) {
+
+	/** confirm radio button checked */
+	protected boolean confirmAnswerRadio(int line, By locator) {
 		List<WebElement> aList = findAll(locator);
 		int aSize = aList.size();
-		if( aSize >0 && line < aSize) {
-			if(aList.get(line).isSelected()) {
+		if (aSize > 0 && line < aSize) {
+			if (aList.get(line).isSelected()) {
 				return true;
-			}
-			else {
+			} else {
 				return false;
 			}
-		}
-		else {
-			Reporter.log("Answer Radio button Line was not found" , true);
+		} else {
+			Reporter.log("Answer Radio button Line was not found", true);
 			return false;
 		}
 	}
-	
+
 	protected boolean alertShow() {
-		WebDriverWait wait = new WebDriverWait(driver, 5 /*timeout in seconds*/);
-		if(wait.until(ExpectedConditions.alertIsPresent())==null) {
-		   Reporter.log("alert was not present", true);
-		   return false;
-		}
-		else {
-		   Reporter.log("alert was present",true);
-		   return true;
-		}
+			try {
+				
+			
+				WebDriverWait wait = new WebDriverWait(driver, 8 /* timeout in seconds */);
+	
+				if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+					Reporter.log("alert was present", true);
+					return true;
+					
+				}
+			}
+			catch(TimeoutException ex) {
+				Reporter.log("alert was not present -- Timeout", true);
+				return false;
+				
+			}
+			return false;
 	}
+		/* catch (TimeoutException ex) {
+			Reporter.log("alert was not present", true);
+			return false;
+		}*/
+		
+	
 
 }

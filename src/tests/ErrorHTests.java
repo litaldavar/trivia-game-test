@@ -3,6 +3,7 @@ package tests;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Steps.GameSteps;
 
@@ -76,7 +77,7 @@ public class ErrorHTests extends TestUtilities {
 		Assert.assertTrue(steps.isAlert(), "Error message didn't show - no answer was checked");
 	}
 
-	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" } )
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
 	public void overMaxCharsQ() {
 		GameSteps steps = new GameSteps(driver);
 
@@ -90,18 +91,19 @@ public class ErrorHTests extends TestUtilities {
 		steps.startGame();
 		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q1Text), "Wrong screen - not question screen");
 
-		Reporter.log("entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" , true );
+		Reporter.log("entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", true);
 		// Step 4: write question 1
 		Reporter.log("enter question 1 with A", true);
 		steps.enterqQuestion("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"); // 51 Characters
 		sleep(1000);
-		Assert.assertTrue(steps.confirmQInput("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"), "The question is not AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-		
+		Assert.assertTrue(steps.confirmQInput("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
+				"The question is not AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
 		// Step 5: click next button to fill answers
 		steps.clickQNext();
 		sleep(1000);
-		Assert.assertTrue(steps.confirmQInput("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA") , "Error message didn't show - no error message when max characters in question is over 50");
+		Assert.assertTrue(steps.confirmQInput("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"),
+				"Error message didn't show - no error message when max characters in question is over 50");
 		/*
 		 * Assert.assertTrue(steps.isAlert(),
 		 * "Error message didn't show - no error message when max characters in question is over 50"
@@ -109,7 +111,7 @@ public class ErrorHTests extends TestUtilities {
 		 */
 	}
 
-	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" }  )
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
 	public void numberAsAnswer() {
 
 		GameSteps steps = new GameSteps(driver);
@@ -138,7 +140,7 @@ public class ErrorHTests extends TestUtilities {
 		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a1Text),
 				"This is not Answers screen for question 1");
 
-		Reporter.log("fill answer as 1" , true);
+		Reporter.log("fill answer as 1", true);
 		// Step 6: fill answer A1 -- first line
 		steps.fillAnswer("1", 0);
 		sleep(1000);
@@ -170,10 +172,10 @@ public class ErrorHTests extends TestUtilities {
 		steps.clickQNext();
 		sleep(1000);
 		Assert.assertTrue(steps.isAlert(),
-				"Error message didn't show - no error message when answer in not in characters alone");
+				"Error message didn't show - no error message when answer is not in characters alone");
 	}
 
-	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" }  )
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
 	public void changeAnswerInSetup() {
 		GameSteps steps = new GameSteps(driver);
 
@@ -250,7 +252,7 @@ public class ErrorHTests extends TestUtilities {
 
 	}
 
-	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" } )
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
 	public void skipFillingAQuestion() {
 		GameSteps steps = new GameSteps(driver);
 
@@ -318,4 +320,425 @@ public class ErrorHTests extends TestUtilities {
 
 	}
 
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
+	public void QinAnotherLang() {
+
+		GameSteps steps = new GameSteps(driver);
+
+		Reporter.log("input question in another language at setup", true);
+
+		// Step 2: open the game site
+		steps.openPage();
+		sleep(3000);
+		Assert.assertEquals(steps.getPageTitle(), SiteTitle, "Error: url is wrong");
+
+		// Step 3: click on start button
+		steps.startGame();
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q1Text), "Wrong screen - not question screen");
+
+		// Step 4: write question 1
+		Reporter.log("enter question 1 with א", true);
+
+		steps.enterqQuestion("א");
+		Assert.assertTrue(steps.confirmQInput("א"), "The question is not א");
+
+		sleep(2000);
+
+		// Step 5: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.isAlert(),
+				"Error message didn't show - no error message when question is not in english");
+
+	}
+
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
+	public void overMzxCharA() {
+
+		GameSteps steps = new GameSteps(driver);
+
+		Reporter.log("Input more than 30 characters in an answer", true);
+
+		// Step 2: open the game site
+		steps.openPage();
+		sleep(3000);
+		Assert.assertEquals(steps.getPageTitle(), SiteTitle, "Error: url is wrong");
+
+		// Step 3: click on start button
+		steps.startGame();
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q1Text), "Wrong screen - not question screen");
+
+		// Step 4: write question 1
+		Reporter.log("enter question 1 with A", true);
+		steps.enterqQuestion("A");
+		Assert.assertTrue(steps.confirmQInput("A"), "The question is not A");
+
+		sleep(2000);
+
+		// Step 5: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a1Text),
+				"This is not Answers screen for question 1");
+
+		// Step 6: fill answer A1 -- first line
+		steps.fillAnswer("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 0),
+				"Answer in line 1 is not AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+		// Step 7: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 8: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 9: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not D");
+
+		// Step 10: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		sleep(2000);
+
+		// Step 11: click next button for question 2
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.isAlert(),
+				"Error message didn't show - no error message when answer is more than 30 characters");
+
+	}
+
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
+	public void lastQback42Q() {
+		GameSteps steps = new GameSteps(driver);
+		
+		Reporter.log("Go back from final question to previous question", true);
+
+		// Step 2: open the game site
+		steps.openPage();
+		sleep(3000);
+		Assert.assertEquals(steps.getPageTitle(), SiteTitle, "Error: url is wrong");
+
+		// Step 3: click on start button
+		steps.startGame();
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q1Text), "Wrong screen - not question screen");
+
+		// Step 4: write question 1
+		Reporter.log("enter question 1 with A", true);
+		steps.enterqQuestion("A");
+		Assert.assertTrue(steps.confirmQInput("A"), "The question is not A");
+
+		sleep(2000);
+
+		// Step 5: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a1Text),
+				"This is not Answers screen for question 1");
+
+		// Step 6: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 7: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 8: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 9: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not D");
+
+		// Step 10: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		sleep(2000);
+
+		// Step 11: click next button for question 2
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q2Text),
+				"Wrong screen - not question 2 screen");
+
+		// Step 12: write question 1
+		Reporter.log("enter question 2 with B", true);
+		steps.enterqQuestion("B");
+		Assert.assertTrue(steps.confirmQInput("B"), "The question is not B");
+
+		sleep(2000);
+
+		// Step 13: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a2Text),
+				"This is not Answers screen for question 2");
+
+		// Step 14: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 15: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 16: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 17: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not A");
+
+		// Step 18: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		// Step 19: click next button for question 2
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q3Text),
+				"Wrong screen - not question 3 screen");
+
+		// Step 20: write question 1
+		Reporter.log("enter question 3 with C", true);
+		steps.enterqQuestion("C");
+		Assert.assertTrue(steps.confirmQInput("C"), "The question is not C");
+
+		sleep(2000);
+
+		// Step 21: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a3Text),
+				"This is not Answers screen for question 3");
+
+		// Step 22: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 23: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 24: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 25: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not A");
+
+		// Step 26: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		sleep(2000);
+		
+		//Step 27: click back for question 2
+		steps.clicBackQ();
+		sleep(1000);
+		SoftAssert softAssert = new SoftAssert(); // soft assert for many fails
+
+		softAssert.assertTrue(steps.confirmText(qText) && steps.confirmText(q2Text) , "This is not question 2 screen");
+		
+		//Step 28: click back again to try to get to question 2
+		steps.clicBackQ();
+		sleep(1000);
+		softAssert.assertTrue(steps.confirmText(qText) && steps.confirmText(q2Text) , "This is not question 2 screen");
+		
+		softAssert.assertAll();
+		
+	}
+	
+	@Test(groups = { "error-handling" }, dependsOnGroups = { "sanity" })
+	public void answersAfterLastQBack() {
+		GameSteps steps = new GameSteps(driver);
+		
+		Reporter.log("Check answers of last question after back button press", true);
+
+		// Step 2: open the game site
+		steps.openPage();
+		sleep(3000);
+		Assert.assertEquals(steps.getPageTitle(), SiteTitle, "Error: url is wrong");
+
+		// Step 3: click on start button
+		steps.startGame();
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q1Text), "Wrong screen - not question screen");
+
+		// Step 4: write question 1
+		Reporter.log("enter question 1 with A", true);
+		steps.enterqQuestion("A");
+		Assert.assertTrue(steps.confirmQInput("A"), "The question is not A");
+
+		sleep(2000);
+
+		// Step 5: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a1Text),
+				"This is not Answers screen for question 1");
+
+		// Step 6: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 7: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 8: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 9: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not D");
+
+		// Step 10: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		sleep(2000);
+
+		// Step 11: click next button for question 2
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q2Text),
+				"Wrong screen - not question 2 screen");
+
+		// Step 12: write question 1
+		Reporter.log("enter question 2 with B", true);
+		steps.enterqQuestion("B");
+		Assert.assertTrue(steps.confirmQInput("B"), "The question is not B");
+
+		sleep(2000);
+
+		// Step 13: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a2Text),
+				"This is not Answers screen for question 2");
+
+		// Step 14: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 15: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 16: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 17: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not A");
+
+		// Step 18: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		// Step 19: click next button for question 2
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(qText) && steps.confirmText(q3Text),
+				"Wrong screen - not question 3 screen");
+
+		// Step 20: write question 1
+		Reporter.log("enter question 3 with C", true);
+		steps.enterqQuestion("C");
+		Assert.assertTrue(steps.confirmQInput("C"), "The question is not C");
+
+		sleep(2000);
+
+		// Step 21: click next button to fill answers
+		steps.clickQNext();
+		sleep(1000);
+		Assert.assertTrue(steps.confirmText(aText) && steps.confirmText(a3Text),
+				"This is not Answers screen for question 3");
+
+		// Step 22: fill answer A1 -- first line
+		steps.fillAnswer("A", 0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("A", 0), "Answer in line 1 is not A");
+
+		// Step 23: fill answer A2 -- second line
+		steps.fillAnswer("B", 1);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("B", 1), "Answer in line 2 is not B");
+
+		// Step 24: fill answer A3 -- third line
+		steps.fillAnswer("C", 2);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("C", 2), "Answer in line 3 is not C");
+
+		// Step 25: fill answer A4 -- fourth line
+		steps.fillAnswer("D", 3);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAInput("D", 3), "Answer in line 4 is not A");
+
+		// Step 26: check first line as correct answer
+		steps.checkAnswer(0);
+		sleep(1000);
+		Assert.assertTrue(steps.confirmAChecked(0), "Correct answer is not at line 1");
+
+		sleep(2000);
+		
+		//Step 27: click back for question 2
+		steps.clicBackQ();
+		sleep(1000);
+		SoftAssert softAssert = new SoftAssert(); // soft assert for many fails
+
+		softAssert.assertTrue(steps.confirmText(qText) && steps.confirmText(q2Text) , "This is not question 2 screen");
+		
+		if(steps.confirmText(aText) && steps.confirmText(a3Text)) { //we are in answers screen for question3
+			//Step 28: check answers
+			softAssert.assertTrue( steps.confirmAInput("A", 0) , "Answer in line 1 for Q3 is not A");
+			softAssert.assertTrue( steps.confirmAInput("B", 1) , "Answer in line 2 for Q3 is not B");
+			softAssert.assertTrue( steps.confirmAInput("C", 2) , "Answer in line 3 for Q3 is not C");
+			softAssert.assertTrue( steps.confirmAInput("D", 3) , "Answer in line 4 for Q3 is not D");
+		}
+		
+		softAssert.assertAll();
+		
+	}
 }

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
+                    <span class="method-stats">20 methods, 12 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,36 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="QinAnotherLang">QinAnotherLang</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="QinAnotherLang">QinAnotherLang</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="answersAfterLastQBack">answersAfterLastQBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="answersAfterLastQBack">answersAfterLastQBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="lastQback42Q">lastQback42Q</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="lastQback42Q">lastQback42Q</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="numberAsAnswer">numberAsAnswer</a> <!-- method navigator-link -->
@@ -161,6 +191,16 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="overMzxCharA">overMzxCharA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="overMzxCharA">overMzxCharA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SanityTest" hash-for-method="sanityTest">sanityTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -189,25 +229,97 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="numberAsAnswer">
-                  </a> <!-- numberAsAnswer -->
-                  <span class="method-name">numberAsAnswer</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1e99efcc84a008efbd40967a7df6b23f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
-	at Steps.GameSteps.isAlert(GameSteps.java:162)
-	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+                  <a name="QinAnotherLang">
+                  </a> <!-- QinAnotherLang -->
+                  <span class="method-name">QinAnotherLang</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:350)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="QinAnotherLang">
+                  </a> <!-- QinAnotherLang -->
+                  <span class="method-name">QinAnotherLang</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:350)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="answersAfterLastQBack">
+                  </a> <!-- answersAfterLastQBack -->
+                  <span class="method-name">answersAfterLastQBack</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:741)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="answersAfterLastQBack">
+                  </a> <!-- answersAfterLastQBack -->
+                  <span class="method-name">answersAfterLastQBack</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:741)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastQback42Q">
+                  </a> <!-- lastQback42Q -->
+                  <span class="method-name">lastQback42Q</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false],
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.lastQback42Q(ErrorHTests.java:577)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastQback42Q">
+                  </a> <!-- lastQback42Q -->
+                  <span class="method-name">lastQback42Q</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false],
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.lastQback42Q(ErrorHTests.java:577)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -216,32 +328,23 @@ Session ID: 1e99efcc84a008efbd40967a7df6b23f
                   <a name="numberAsAnswer">
                   </a> <!-- numberAsAnswer -->
                   <span class="method-name">numberAsAnswer</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16028, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
-	at Steps.GameSteps.isAlert(GameSteps.java:162)
-	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:172)
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when answer is not in characters alone expected [true] but found [false]
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:174)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="overMaxCharsQ">
-                  </a> <!-- overMaxCharsQ -->
-                  <span class="method-name">overMaxCharsQ</span>
-                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
-	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+                  <a name="numberAsAnswer">
+                  </a> <!-- numberAsAnswer -->
+                  <span class="method-name">numberAsAnswer</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when answer is not in characters alone expected [true] but found [false]
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:174)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -256,7 +359,22 @@ Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
                   </a> <!-- overMaxCharsQ -->
                   <span class="method-name">overMaxCharsQ</span>
                   <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
-	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:104)
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:105)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="overMaxCharsQ">
+                  </a> <!-- overMaxCharsQ -->
+                  <span class="method-name">overMaxCharsQ</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:105)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -270,22 +388,13 @@ Session ID: 3fa6297a-f5f9-4aec-872d-d42c19703961
                   <a name="skipFillingAQuestion">
                   </a> <!-- skipFillingAQuestion -->
                   <span class="method-name">skipFillingAQuestion</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\lital\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54806}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 246593159d647c9a7d90f5a2eb07b309
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
-	at Steps.GameSteps.isAlert(GameSteps.java:162)
-	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:319)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -294,22 +403,13 @@ Session ID: 246593159d647c9a7d90f5a2eb07b309
                   <a name="skipFillingAQuestion">
                   </a> <!-- skipFillingAQuestion -->
                   <span class="method-name">skipFillingAQuestion</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 5 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 2064, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Steps.BaseSteps.alertShow(BaseSteps.java:165)
-	at Steps.GameSteps.isAlert(GameSteps.java:162)
-	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:317)
+                  <div class="stack-trace">java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:319)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -347,6 +447,20 @@ Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
                   <a name="changeAnswerInSetup">
                   </a> <!-- changeAnswerInSetup -->
                   <span class="method-name">changeAnswerInSetup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="overMzxCharA">
+                  </a> <!-- overMzxCharA -->
+                  <span class="method-name">overMzxCharA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="overMzxCharA">
+                  </a> <!-- overMzxCharA -->
+                  <span class="method-name">overMzxCharA</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -457,11 +571,23 @@ Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
               <span class="test-group-name">error-handling</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">QinAnotherLang</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">answerNotChecked</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">answersAfterLastQBack</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">changeAnswerInSetup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">lastQback42Q</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -470,6 +596,10 @@ Session ID: 3fb259c5-72c5-4e4f-a204-f5818552e58f
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">overMaxCharsQ</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">overMzxCharA</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -501,60 +631,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sanityTest')
 data.setCell(0, 2, 'tests.SanityTest')
-data.setCell(0, 3, 62945);
+data.setCell(0, 3, 62860);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sanityTest')
 data.setCell(1, 2, 'tests.SanityTest')
-data.setCell(1, 3, 57399);
+data.setCell(1, 3, 58182);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'changeAnswerInSetup')
+data.setCell(2, 1, 'answersAfterLastQBack')
 data.setCell(2, 2, 'tests.ErrorHTests')
-data.setCell(2, 3, 25658);
+data.setCell(2, 3, 45514);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'skipFillingAQuestion')
+data.setCell(3, 1, 'lastQback42Q')
 data.setCell(3, 2, 'tests.ErrorHTests')
-data.setCell(3, 3, 25585);
+data.setCell(3, 3, 44934);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'numberAsAnswer')
+data.setCell(4, 1, 'lastQback42Q')
 data.setCell(4, 2, 'tests.ErrorHTests')
-data.setCell(4, 3, 23850);
+data.setCell(4, 3, 41726);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'changeAnswerInSetup')
+data.setCell(5, 1, 'answersAfterLastQBack')
 data.setCell(5, 2, 'tests.ErrorHTests')
-data.setCell(5, 3, 23724);
+data.setCell(5, 3, 39835);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'skipFillingAQuestion')
 data.setCell(6, 2, 'tests.ErrorHTests')
-data.setCell(6, 3, 23602);
+data.setCell(6, 3, 28145);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'numberAsAnswer')
 data.setCell(7, 2, 'tests.ErrorHTests')
-data.setCell(7, 3, 22460);
+data.setCell(7, 3, 27800);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'answerNotChecked')
+data.setCell(8, 1, 'skipFillingAQuestion')
 data.setCell(8, 2, 'tests.ErrorHTests')
-data.setCell(8, 3, 16659);
+data.setCell(8, 3, 26493);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'answerNotChecked')
+data.setCell(9, 1, 'changeAnswerInSetup')
 data.setCell(9, 2, 'tests.ErrorHTests')
-data.setCell(9, 3, 14247);
+data.setCell(9, 3, 25705);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'overMaxCharsQ')
+data.setCell(10, 1, 'numberAsAnswer')
 data.setCell(10, 2, 'tests.ErrorHTests')
-data.setCell(10, 3, 8192);
+data.setCell(10, 3, 25140);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'overMaxCharsQ')
+data.setCell(11, 1, 'changeAnswerInSetup')
 data.setCell(11, 2, 'tests.ErrorHTests')
-data.setCell(11, 3, 7645);
+data.setCell(11, 3, 23418);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'overMzxCharA')
+data.setCell(12, 2, 'tests.ErrorHTests')
+data.setCell(12, 3, 19052);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'overMzxCharA')
+data.setCell(13, 2, 'tests.ErrorHTests')
+data.setCell(13, 3, 18665);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'QinAnotherLang')
+data.setCell(14, 2, 'tests.ErrorHTests')
+data.setCell(14, 3, 17746);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'QinAnotherLang')
+data.setCell(15, 2, 'tests.ErrorHTests')
+data.setCell(15, 3, 17403);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'answerNotChecked')
+data.setCell(16, 2, 'tests.ErrorHTests')
+data.setCell(16, 3, 15635);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'answerNotChecked')
+data.setCell(17, 2, 'tests.ErrorHTests')
+data.setCell(17, 3, 14290);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'overMaxCharsQ')
+data.setCell(18, 2, 'tests.ErrorHTests')
+data.setCell(18, 3, 8332);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'overMaxCharsQ')
+data.setCell(19, 2, 'tests.ErrorHTests')
+data.setCell(19, 3, 7868);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -566,6 +728,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">answerNotChecked</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Answer at setup is not checked</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">alert was present</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">sanityTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Start game!!</span>
@@ -615,9 +791,9 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">answerNotChecked</span>
+              <span class="reporter-method-name">overMzxCharA</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Answer at setup is not checked</span>
+                <span class="reporter-method-output">Input more than 30 characters in an answer</span>
                 <span class="reporter-method-output">Start game!!</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
@@ -626,6 +802,79 @@ return data;
                 <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">alert was present</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">numberAsAnswer</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">number as an answer in setup</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">fill answer as 1</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">lastQback42Q</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Go back from final question to previous question</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">enter question 2 with B</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">enter question 3 with C</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">answersAfterLastQBack</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Check answers of last question after back button press</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">enter question 2 with B</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">enter question 3 with C</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -641,20 +890,7 @@ return data;
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 2</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">numberAsAnswer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">number as an answer in setup</span>
-                <span class="reporter-method-output">Start game!!</span>
-                <span class="reporter-method-output">text expected: Please type here your question</span>
-                <span class="reporter-method-output">text expected:  question number: 1</span>
-                <span class="reporter-method-output">enter question 1 with A</span>
-                <span class="reporter-method-output">Enter first question</span>
-                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
-                <span class="reporter-method-output">text expected:  question number: 1</span>
-                <span class="reporter-method-output">fill answer as 1</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -667,6 +903,18 @@ return data;
                 <span class="reporter-method-output">entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
                 <span class="reporter-method-output">enter question 1 with A</span>
                 <span class="reporter-method-output">Enter first question</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">QinAnotherLang</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">input question in another language at setup</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with א</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -688,6 +936,20 @@ return data;
               <span class="reporter-method-name">answerNotChecked</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Answer at setup is not checked</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">alert was present</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">overMzxCharA</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Input more than 30 characters in an answer</span>
                 <span class="reporter-method-output">Start game!!</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
@@ -744,6 +1006,31 @@ return data;
                 <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">fill answer as 1</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">overMaxCharsQ</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Over max characters in a question</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">QinAnotherLang</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">input question in another language at setup</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with א</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -759,18 +1046,65 @@ return data;
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">alert was not present -- Timeout</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">overMaxCharsQ</span>
+              <span class="reporter-method-name">answersAfterLastQBack</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Over max characters in a question</span>
+                <span class="reporter-method-output">Check answers of last question after back button press</span>
                 <span class="reporter-method-output">Start game!!</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
-                <span class="reporter-method-output">entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
                 <span class="reporter-method-output">enter question 1 with A</span>
                 <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">enter question 2 with B</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">enter question 3 with C</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">lastQback42Q</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Go back from final question to previous question</span>
+                <span class="reporter-method-output">Start game!!</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">enter question 1 with A</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 1</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">enter question 2 with B</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">enter question 3 with C</span>
+                <span class="reporter-method-output">Enter first question</span>
+                <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
+                <span class="reporter-method-output">text expected:  question number: 3</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
+                <span class="reporter-method-output">text expected: Please type here your question</span>
+                <span class="reporter-method-output">text expected:  question number: 2</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -840,160 +1174,268 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sanityTest</span>
-                <span class="method-start">3229 ms</span>
+                <span class="method-start">4052 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sanityTest</span>
-                <span class="method-start">5359 ms</span>
+                <span class="method-start">6905 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">60630 ms</span>
+                <span class="method-start">62236 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ErrorHTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">63276 ms</span>
+                <span class="method-start">64871 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">answerNotChecked</span>
-                <span class="method-start">65457 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">QinAnotherLang</span>
+                <span class="method-start">67135 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SanityTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">68305 ms</span>
+                <span class="method-start">69767 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ErrorHTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">71367 ms</span>
+                <span class="method-start">72686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">QinAnotherLang</span>
+                <span class="method-start">76560 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">84889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">87529 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">answerNotChecked</span>
-                <span class="method-start">75249 ms</span>
+                <span class="method-start">89688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">79708 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">82351 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">changeAnswerInSetup</span>
-                <span class="method-start">84513 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">91909 ms</span>
+                <span class="method-start">93964 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">95160 ms</span>
+                <span class="method-start">97212 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">changeAnswerInSetup</span>
-                <span class="method-start">99014 ms</span>
+                <span class="method-name">answerNotChecked</span>
+                <span class="method-start">101067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">108238 ms</span>
+                <span class="method-start">103981 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">110861 ms</span>
+                <span class="method-start">106615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">answersAfterLastQBack</span>
+                <span class="method-start">108805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">116703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">119853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">answersAfterLastQBack</span>
+                <span class="method-start">123706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">148641 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">151311 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeAnswerInSetup</span>
+                <span class="method-start">153526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">169221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">172230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeAnswerInSetup</span>
+                <span class="method-start">176075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">176945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">179576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lastQback42Q</span>
+                <span class="method-start">181740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">201781 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">205000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lastQback42Q</span>
+                <span class="method-start">208845 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">223467 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">226101 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">numberAsAnswer</span>
-                <span class="method-start">113074 ms</span>
+                <span class="method-start">228343 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">124673 ms</span>
+                <span class="method-start">253484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">253780 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">127801 ms</span>
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">256115 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">256912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">overMaxCharsQ</span>
+                <span class="method-start">258407 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">numberAsAnswer</span>
-                <span class="method-start">131653 ms</span>
+                <span class="method-start">260870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">135536 ms</span>
+                <span class="method-start">266277 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">138163 ms</span>
+                <span class="method-start">268897 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">overMaxCharsQ</span>
-                <span class="method-start">140320 ms</span>
+                <span class="method-name">overMzxCharA</span>
+                <span class="method-start">271085 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">147967 ms</span>
+                <span class="method-start">288671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">290138 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">291905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">150631 ms</span>
+                <span class="method-start">292789 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">skipFillingAQuestion</span>
-                <span class="method-start">152795 ms</span>
+                <span class="method-start">295032 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">155504 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">158747 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">overMaxCharsQ</span>
-                <span class="method-start">162623 ms</span>
+                <span class="method-start">296369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">170817 ms</span>
+                <span class="method-start">304702 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(firefox)</span>
-                <span class="method-start">173956 ms</span>
+                <span class="method-start">307940 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">overMzxCharA</span>
+                <span class="method-start">311806 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">176400 ms</span>
+                <span class="method-start">321526 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">330471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">333798 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">skipFillingAQuestion</span>
-                <span class="method-start">177813 ms</span>
+                <span class="method-start">337633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">203400 ms</span>
+                <span class="method-start">365779 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
