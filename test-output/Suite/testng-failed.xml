@@ -11,14 +11,9 @@
     <classes>
       <class name="tests.ErrorHTests">
         <methods>
-          <include name="overMaxCharsQ"/>
-          <include name="skipFillingAQuestion"/>
-          <include name="QinAnotherLang"/>
-          <include name="lastQback42Q"/>
-          <include name="numberAsAnswer"/>
+          <include name="randomQ"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="answersAfterLastQBack"/>
         </methods>
       </class> <!-- tests.ErrorHTests -->
       <class name="tests.SanityTest">
@@ -30,33 +25,4 @@
       </class> <!-- tests.SanityTest -->
     </classes>
   </test> <!-- CromeTest(failed) -->
-  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <groups>
-      <run>
-        <include name="eh"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="tests.ErrorHTests">
-        <methods>
-          <include name="overMaxCharsQ"/>
-          <include name="skipFillingAQuestion"/>
-          <include name="QinAnotherLang"/>
-          <include name="lastQback42Q"/>
-          <include name="numberAsAnswer"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="answersAfterLastQBack"/>
-        </methods>
-      </class> <!-- tests.ErrorHTests -->
-      <class name="tests.SanityTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="sanityTest"/>
-        </methods>
-      </class> <!-- tests.SanityTest -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

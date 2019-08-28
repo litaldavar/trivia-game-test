@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 22 17:26:38 IDT 2019</td>
+<td>Started on:</td><td>Sun Aug 25 18:19:27 IDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>369 seconds (369123 ms)</td>
+<tr><td>Total time:</td><td>426 seconds (426969 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>error-handling eh sanity </td>
 </tr><tr>
@@ -76,31 +76,54 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.ErrorHTests.QinAnotherLang()'><b>QinAnotherLang</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-2052161538" onClick='toggleBox("Output-2052161538", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-606362832" onClick='toggleBox("Output-606362832", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2052161538" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2052161538">
+<a href="#Output-606362832" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-606362832">
 input question in another language at setup<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with א<br/>
-Enter first question<br/>
-alert was not present -- Timeout<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
-	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:350)
+<td><div><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&amp;u=https%3A//svcollegetest.000webhostapp.com/&amp;c=UTF-8&amp;f=regular&amp;d=The%20server%20at%20svcollegetest.000webhostapp.com%20is%20taking%20too%20long%20to%20respond.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16792, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93a3125e-235d-4bfe-8694-b3a02d5545bc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at Steps.BaseSteps.OpenPage(BaseSteps.java:26)
+	at Steps.GameSteps.openPage(GameSteps.java:45)
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:331)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2052161538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2052161538'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:350)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace606362832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace606362832'><pre>org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&amp;u=https%3A//svcollegetest.000webhostapp.com/&amp;c=UTF-8&amp;f=regular&amp;d=The%20server%20at%20svcollegetest.000webhostapp.com%20is%20taking%20too%20long%20to%20respond.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16792, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 93a3125e-235d-4bfe-8694-b3a02d5545bc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at Steps.BaseSteps.OpenPage(BaseSteps.java:26)
+	at Steps.GameSteps.openPage(GameSteps.java:45)
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:331)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,14 +145,14 @@ alert was not present -- Timeout<br/>
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>17</td>
+<td>21</td>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.answersAfterLastQBack()'><b>answersAfterLastQBack</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-701894138" onClick='toggleBox("Output-701894138", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-226280657" onClick='toggleBox("Output-226280657", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-701894138" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-701894138">
+<a href="#Output-226280657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-226280657">
 Check answers of last question after back button press<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -158,16 +181,16 @@ text expected:  question number: 3<br/>
 </td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	This is not question 2 screen expected [true] but found [false]
-	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:741)
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:742)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace701894138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace701894138'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace226280657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace226280657'><pre>java.lang.AssertionError: The following asserts failed:
 	This is not question 2 screen expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:741)
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:742)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -189,14 +212,14 @@ text expected:  question number: 3<br/>
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>45</td>
+<td>43</td>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.lastQback42Q()'><b>lastQback42Q</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-517236475" onClick='toggleBox("Output-517236475", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2021593474" onClick='toggleBox("Output-2021593474", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-517236475" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-517236475">
+<a href="#Output-2021593474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2021593474">
 Go back from final question to previous question<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -231,8 +254,8 @@ text expected:  question number: 2<br/>
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace517236475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace517236475'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2021593474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2021593474'><pre>java.lang.AssertionError: The following asserts failed:
 	This is not question 2 screen expected [true] but found [false],
 	This is not question 2 screen expected [true] but found [false]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
@@ -262,10 +285,10 @@ text expected:  question number: 2<br/>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.numberAsAnswer()'><b>numberAsAnswer</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-1082849658" onClick='toggleBox("Output-1082849658", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1808321760" onClick='toggleBox("Output-1808321760", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1082849658" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1082849658">
+<a href="#Output-1808321760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1808321760">
 number as an answer in setup<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -284,8 +307,8 @@ alert was not present -- Timeout<br/>
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082849658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1082849658'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when answer is not in characters alone expected [true] but found [false]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808321760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808321760'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when answer is not in characters alone expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
@@ -315,10 +338,10 @@ alert was not present -- Timeout<br/>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.overMaxCharsQ()'><b>overMaxCharsQ</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-757198401" onClick='toggleBox("Output-757198401", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-318622317" onClick='toggleBox("Output-318622317", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-757198401" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-757198401">
+<a href="#Output-318622317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-318622317">
 Over max characters in a question<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -334,8 +357,8 @@ Enter first question<br/>
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace757198401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace757198401'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318622317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318622317'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
@@ -364,11 +387,123 @@ Enter first question<br/>
 <td>8</td>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
-<td title='tests.ErrorHTests.skipFillingAQuestion()'><b>skipFillingAQuestion</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-1955757128" onClick='toggleBox("Output-1955757128", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.ErrorHTests.randomQ()'><b>randomQ</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1275460436" onClick='toggleBox("Output-1275460436", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1955757128" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1955757128">
+<a href="#Output-1275460436" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1275460436">
+Are the game questions random?<br/>
+to be sure we will check 3 times<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+Enter first question<br/>
+New question pushed is: A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+Enter first question<br/>
+New question pushed is: B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+Enter first question<br/>
+New question pushed is: C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: You finished to build the test - lets play!!<br/>
+Stack is => [A, B, C]<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Current question is: C<br/>
+stack is => [A, B]<br/>
+stack Q => C<br/>
+Q = C and stackCurrQ = C<br/>
+Answer checked on line: 1<br/>
+Stack is => [A, B]<br/>
+Current question is: B<br/>
+stack is => [A]<br/>
+stack Q => B<br/>
+Q = B and stackCurrQ = B<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input class=&quot;userdata&quot; name=&quot;answertest2&quot; type=&quot;radio&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 22424, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c68669e9-88dd-488f-a7fb-808d2b2109d8
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Steps.BaseSteps.checkAnswer(BaseSteps.java:136)
+	at Steps.GameSteps.checkAnswerPlay(GameSteps.java:120)
+	at tests.ErrorHTests.randomQ(ErrorHTests.java:922)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275460436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275460436'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;input class=&quot;userdata&quot; name=&quot;answertest2&quot; type=&quot;radio&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-CFDBD86&apos;, ip: &apos;192.168.0.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 22424, moz:profile: C:\Users\lital\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c68669e9-88dd-488f-a7fb-808d2b2109d8
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Steps.BaseSteps.checkAnswer(BaseSteps.java:136)
+	at Steps.GameSteps.checkAnswerPlay(GameSteps.java:120)
+	at tests.ErrorHTests.randomQ(ErrorHTests.java:922)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>51</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.skipFillingAQuestion()'><b>skipFillingAQuestion</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1411325489" onClick='toggleBox("Output-1411325489", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1411325489" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1411325489">
 Skip filling a question<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -388,8 +523,8 @@ alert was not present -- Timeout<br/>
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1955757128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1955757128'><pre>java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1411325489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1411325489'><pre>java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
@@ -427,10 +562,10 @@ alert was not present -- Timeout<br/>
 </tr>
 <tr>
 <td title='tests.ErrorHTests.answerNotChecked()'><b>answerNotChecked</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-1918779078" onClick='toggleBox("Output-1918779078", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2144224175" onClick='toggleBox("Output-2144224175", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1918779078" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1918779078">
+<a href="#Output-2144224175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144224175">
 Answer at setup is not checked<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -443,14 +578,14 @@ alert was present<br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
+<td>16</td>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.changeAnswerInSetup()'><b>changeAnswerInSetup</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-180764160" onClick='toggleBox("Output-180764160", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-910029259" onClick='toggleBox("Output-910029259", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-180764160" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-180764160">
+<a href="#Output-910029259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-910029259">
 Change selection of answer in setup stage<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -468,10 +603,10 @@ text expected:  question number: 2<br/>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.ErrorHTests.overMzxCharA()'><b>overMzxCharA</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-1250124715" onClick='toggleBox("Output-1250124715", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-859721259" onClick='toggleBox("Output-859721259", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1250124715" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1250124715">
+<a href="#Output-859721259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-859721259">
 Input more than 30 characters in an answer<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
@@ -488,10 +623,10 @@ alert was present<br/>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 <tr>
 <td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
-<a href="#Output-1058048825" onClick='toggleBox("Output-1058048825", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1698681076" onClick='toggleBox("Output-1698681076", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1058048825" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1058048825">
+<a href="#Output-1698681076" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1698681076">
 Start game!!<br/>
 text expected: Please type here your question<br/>
 text expected:  question number: 1<br/>

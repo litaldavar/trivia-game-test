@@ -3,6 +3,8 @@ package Steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
+import java.util.Stack;
+import java.io.*;
 
 public class GameSteps extends BaseSteps {
 
@@ -28,13 +30,24 @@ public class GameSteps extends BaseSteps {
 	private By tryAgainButton = By.xpath("//*[@id=\"markpage\"]/center/button[1]");
 	private By QuitGameButton = By.xpath("//*[@id=\"markpage\"]/center/button[2]");
 	private By facebookButton = By.xpath("//*[@id=\"fackBook2\"]/img");
+	//*[@id="2"]/h3
+	//*[@id="1"]/h3
 	
 	private int qNum = 2;
-	
+	public Stack<String> stackQ;
 
 	public GameSteps(WebDriver driver) {
 		super(driver);
-	}	
+		stackQ = new Stack<String>();
+	}
+	
+	public int getqNum(){
+		return this.qNum;
+	}
+	
+	public void setqNum(int q) {
+		this.qNum = q;
+	}
 	// open site 
 	public void openPage()  {
 		OpenPage(pageUrl);
@@ -60,8 +73,7 @@ public class GameSteps extends BaseSteps {
 	}
 	
 	//enter a question 
-	public void enterqQuestion(String question) {
-		Reporter.log("Enter first question" , true);
+	public void enterqQuestion(String question) {		
 		type(question, qInput);
 		click(heder);
 		
@@ -162,6 +174,28 @@ public class GameSteps extends BaseSteps {
 		return alertShow();
 	}
 	
+	/** add question to the stack*/
+	public void add2stackQ(String q) {
+		Reporter.log("New question pushed is: " + q);
+		stackQ.push(q);
+	}
 	
+	/** get current question*/
+	public String getFromStackQ() {
+		if(!stackQ.empty()) {
+			Reporter.log("from pop function => stack is => " + stackQ , true);
+			String Q = stackQ.pop();						
+			return Q;
+		}
+		return "Error: no Question found";
+	}
+	
+	public String getQuestion(int i) {
+		
+		By b =  By.xpath("//*[@id="+ i + "]/h3");
+		String Q = getGameQuestion(b);		
+		return Q;
+		
+	}
 	
 }

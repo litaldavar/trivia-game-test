@@ -2,6 +2,7 @@ package Steps;
 
 import java.util.List;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -15,10 +16,9 @@ import org.testng.Reporter;
 public class BaseSteps {
 
 	protected WebDriver driver;
-
+	
 	public BaseSteps(WebDriver driver) {
-		this.driver = driver;
-
+		this.driver = driver;		
 	}
 
 	// Step 1: open main page
@@ -174,11 +174,14 @@ public class BaseSteps {
 			}
 			return false;
 	}
-		/* catch (TimeoutException ex) {
-			Reporter.log("alert was not present", true);
-			return false;
-		}*/
 		
+	protected String getGameQuestion(By locator) {
+		WebElement e = find(locator);
+		String Q = e.getText();
+		return Q;
+	//	return e.getAttribute("value").intern();
+		
+	}
 	
 
 }

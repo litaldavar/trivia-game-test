@@ -31,7 +31,7 @@
 	</test><!--Test -->
 	
 
-	<test name="FirefoxTest">
+	<!-- <test name="FirefoxTest">
 		<parameter name="browser" value="firefox" />
 		
 		<groups>
@@ -59,7 +59,7 @@
 			<class name="tests.FuncTests" />
 			<class name="tests.ErrorHTests"/>
 		</classes>
-	</test> 
+	</test>  -->
 
 
 </suite> <!-- Suite -->
