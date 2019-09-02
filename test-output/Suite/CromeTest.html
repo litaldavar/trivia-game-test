@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 28 17:40:43 IDT 2019</td>
+<td>Started on:</td><td>Mon Sep 02 11:51:06 IDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>193 seconds (193735 ms)</td>
+<tr><td>Total time:</td><td>78 seconds (78075 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>error-handling eh sanity </td>
 </tr><tr>
@@ -75,119 +75,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ErrorHTests.randomQ()'><b>randomQ</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-2056033742" onClick='toggleBox("Output-2056033742", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.ErrorHTests.answerNotChecked()'><b>answerNotChecked</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-2052831097" onClick='toggleBox("Output-2052831097", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2056033742" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2056033742">
-Are the game questions random?<br/>
-to be sure we will check 3 times<br/>
-Start game!!<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 1<br/>
-enter question 1 with A<br/>
-New question pushed is: A<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 1<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 2<br/>
-enter question 2 with B<br/>
-New question pushed is: B<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 2<br/>
-text expected: Please type here your question<br/>
-text expected:  question number: 3<br/>
-enter question 3 with C<br/>
-New question pushed is: C<br/>
-text expected: Please enter 4 possible answers and Mark the right one! <br/>
-text expected:  question number: 3<br/>
-text expected: You finished to build the test - lets play!!<br/>
-Let us play!!<br/>
-text expected: Test<br/>
-Try number: 1<br/>
-Stack is => [A, B, C]<br/>
-from pop function => stack is => [A, B, C]<br/>
-Q = C
-stackCurrQ = C<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 3<br/>
-from pop function => stack is => [A, B]<br/>
-Q = B
-stackCurrQ = B<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 2<br/>
-from pop function => stack is => [A]<br/>
-Q = A
-stackCurrQ = A<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 1<br/>
-New question pushed is: A<br/>
-New question pushed is: B<br/>
-New question pushed is: C<br/>
-Let us play!!<br/>
-text expected: Test<br/>
-Try number: 2<br/>
-Stack is => [A, B, C]<br/>
-from pop function => stack is => [A, B, C]<br/>
-Q = C
-stackCurrQ = C<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 3<br/>
-from pop function => stack is => [A, B]<br/>
-Q = B
-stackCurrQ = B<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 2<br/>
-from pop function => stack is => [A]<br/>
-Q = A
-stackCurrQ = A<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 1<br/>
-New question pushed is: A<br/>
-New question pushed is: B<br/>
-New question pushed is: C<br/>
-Let us play!!<br/>
-text expected: Test<br/>
-Try number: 3<br/>
-Stack is => [A, B, C]<br/>
-from pop function => stack is => [A, B, C]<br/>
-Q = C
-stackCurrQ = C<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 3<br/>
-from pop function => stack is => [A, B]<br/>
-Q = B
-stackCurrQ = B<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 2<br/>
-from pop function => stack is => [A]<br/>
-Q = A
-stackCurrQ = A<br/>
-Answer checked on line: 1<br/>
-text expected: Test<br/>
-i is 1<br/>
+<a href="#Output-2052831097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2052831097">
+Answer at setup is not checked<br/>
+<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Questions are not random expected [true] but found [false]
-	at tests.ErrorHTests.randomQ(ErrorHTests.java:831)
+<td><div><pre>java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
+	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056033742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2056033742'><pre>java.lang.AssertionError: Questions are not random expected [true] but found [false]
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2052831097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2052831097'><pre>java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at tests.ErrorHTests.randomQ(ErrorHTests.java:831)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -209,7 +119,7 @@ i is 1<br/>
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>126</td>
+<td>3</td>
 <td>tests.ErrorHTests@457e2f02</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -221,10 +131,11 @@ i is 1<br/>
 </tr>
 <tr>
 <td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
-<a href="#Output-1623749407" onClick='toggleBox("Output-1623749407", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1146549489" onClick='toggleBox("Output-1146549489", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1623749407" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1623749407">
+<a href="#Output-1146549489" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1146549489">
+SVCOLLEGE TEST<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
 text expected:  question number: 1<br/>
@@ -254,7 +165,7 @@ Sanity test finished!!<br/>
 </div>
 </td>
 <td></td>
-<td>57</td>
+<td>58</td>
 <td>tests.SanityTest@4cc0edeb</td></tr>
 </table><p>
 </body>

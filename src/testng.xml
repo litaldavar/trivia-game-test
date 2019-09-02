@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite"  parallel = "tests" thread-count ="5" verbose= "1">
+
+<suite name="Suite" parallel = "tests"  thread-count ="5" verbose= "1">
 	<test name="CromeTest">
 		<parameter name="browser" value="chrome" />
 		<groups>
@@ -31,7 +32,7 @@
 	</test><!--Test -->
 	
 
-	<!-- <test name="FirefoxTest">
+	 <test name="FirefoxTest">
 		<parameter name="browser" value="firefox" />
 		
 		<groups>
@@ -59,7 +60,7 @@
 			<class name="tests.FuncTests" />
 			<class name="tests.ErrorHTests"/>
 		</classes>
-	</test>  -->
+	</test> 
 
 
 </suite> <!-- Suite -->

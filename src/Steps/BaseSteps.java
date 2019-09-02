@@ -28,6 +28,7 @@ public class BaseSteps {
 
 	// get page title
 	protected String getTitle() {
+		Reporter.log(driver.getTitle(),true);
 		return driver.getTitle();
 	}
 

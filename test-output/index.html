@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="randomQ">randomQ</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="answerNotChecked">answerNotChecked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ErrorHTests" hash-for-method="answerNotChecked">answerNotChecked</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -114,6 +119,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SanityTest" hash-for-method="sanityTest">sanityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SanityTest" hash-for-method="sanityTest">sanityTest</a> <!-- method navigator-link -->
@@ -139,16 +149,31 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="randomQ">
-                  </a> <!-- randomQ -->
-                  <span class="method-name">randomQ</span>
-                  <div class="stack-trace">java.lang.AssertionError: Questions are not random expected [true] but found [false]
-	at tests.ErrorHTests.randomQ(ErrorHTests.java:831)
+                  <a name="answerNotChecked">
+                  </a> <!-- answerNotChecked -->
+                  <span class="method-name">answerNotChecked</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
+	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 19 stack frames
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="answerNotChecked">
+                  </a> <!-- answerNotChecked -->
+                  <span class="method-name">answerNotChecked</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
+	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -160,6 +185,13 @@
               <span class="class-name">tests.SanityTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sanityTest">
+                  </a> <!-- sanityTest -->
+                  <span class="method-name">sanityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="sanityTest">
@@ -202,6 +234,29 @@
       &lt;class name=&quot;tests.ErrorHTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;all&quot;&gt;
+        &lt;include name=&quot;sanity&quot;/&gt;
+        &lt;include name=&quot;func&quot;/&gt;
+        &lt;include name=&quot;error-handling&quot;/&gt;
+        &lt;include name=&quot;integration&quot;/&gt;
+      &lt;/define&gt; &lt;!-- all --&gt;
+      &lt;define name=&quot;eh&quot;&gt;
+        &lt;include name=&quot;sanity&quot;/&gt;
+        &lt;include name=&quot;error-handling&quot;/&gt;
+      &lt;/define&gt; &lt;!-- eh --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;eh&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.SanityTest&quot;/&gt;
+      &lt;class name=&quot;tests.FuncTests&quot;/&gt;
+      &lt;class name=&quot;tests.ErrorHTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -215,6 +270,9 @@
               <li>
                 <span class="test-name">CromeTest (3 classes)</span>
               </li>
+              <li>
+                <span class="test-name">FirefoxTest (3 classes)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -227,7 +285,7 @@
               <span class="test-group-name">error-handling</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">randomQ</span>
+                <span class="method-in-group-name">answerNotChecked</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -255,20 +313,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'randomQ')
-data.setCell(0, 2, 'tests.ErrorHTests')
-data.setCell(0, 3, 126144);
+data.setCell(0, 1, 'sanityTest')
+data.setCell(0, 2, 'tests.SanityTest')
+data.setCell(0, 3, 63531);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sanityTest')
 data.setCell(1, 2, 'tests.SanityTest')
-data.setCell(1, 3, 57149);
+data.setCell(1, 3, 58751);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'answerNotChecked')
+data.setCell(2, 2, 'tests.ErrorHTests')
+data.setCell(2, 3, 3029);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'answerNotChecked')
+data.setCell(3, 2, 'tests.ErrorHTests')
+data.setCell(3, 3, 3021);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -282,6 +348,7 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">sanityTest</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">SVCOLLEGE TEST</span>
                 <span class="reporter-method-output">Start game!!</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
@@ -311,129 +378,94 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">randomQ</span>
+              <span class="reporter-method-name">answerNotChecked</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Are the game questions random?</span>
-                <span class="reporter-method-output">to be sure we will check 3 times</span>
+                <span class="reporter-method-output">Answer at setup is not checked</span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sanityTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">SVCOLLEGE TEST</span>
                 <span class="reporter-method-output">Start game!!</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">enter question 1 with A</span>
-                <span class="reporter-method-output">New question pushed is: A</span>
                 <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
                 <span class="reporter-method-output">text expected:  question number: 1</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 2</span>
                 <span class="reporter-method-output">enter question 2 with B</span>
-                <span class="reporter-method-output">New question pushed is: B</span>
                 <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
                 <span class="reporter-method-output">text expected:  question number: 2</span>
                 <span class="reporter-method-output">text expected: Please type here your question</span>
                 <span class="reporter-method-output">text expected:  question number: 3</span>
                 <span class="reporter-method-output">enter question 3 with C</span>
-                <span class="reporter-method-output">New question pushed is: C</span>
                 <span class="reporter-method-output">text expected: Please enter 4 possible answers and Mark the right one! </span>
                 <span class="reporter-method-output">text expected:  question number: 3</span>
                 <span class="reporter-method-output">text expected: You finished to build the test - lets play!!</span>
                 <span class="reporter-method-output">Let us play!!</span>
                 <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">Try number: 1</span>
-                <span class="reporter-method-output">Stack is => [A, B, C]</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B, C]</span>
-                <span class="reporter-method-output">Q = C
-stackCurrQ = C</span>
                 <span class="reporter-method-output">Answer checked on line: 1</span>
                 <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 3</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B]</span>
-                <span class="reporter-method-output">Q = B
-stackCurrQ = B</span>
                 <span class="reporter-method-output">Answer checked on line: 1</span>
                 <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 2</span>
-                <span class="reporter-method-output">from pop function => stack is => [A]</span>
-                <span class="reporter-method-output">Q = A
-stackCurrQ = A</span>
                 <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 1</span>
-                <span class="reporter-method-output">New question pushed is: A</span>
-                <span class="reporter-method-output">New question pushed is: B</span>
-                <span class="reporter-method-output">New question pushed is: C</span>
-                <span class="reporter-method-output">Let us play!!</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">Try number: 2</span>
-                <span class="reporter-method-output">Stack is => [A, B, C]</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B, C]</span>
-                <span class="reporter-method-output">Q = C
-stackCurrQ = C</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 3</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B]</span>
-                <span class="reporter-method-output">Q = B
-stackCurrQ = B</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 2</span>
-                <span class="reporter-method-output">from pop function => stack is => [A]</span>
-                <span class="reporter-method-output">Q = A
-stackCurrQ = A</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 1</span>
-                <span class="reporter-method-output">New question pushed is: A</span>
-                <span class="reporter-method-output">New question pushed is: B</span>
-                <span class="reporter-method-output">New question pushed is: C</span>
-                <span class="reporter-method-output">Let us play!!</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">Try number: 3</span>
-                <span class="reporter-method-output">Stack is => [A, B, C]</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B, C]</span>
-                <span class="reporter-method-output">Q = C
-stackCurrQ = C</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 3</span>
-                <span class="reporter-method-output">from pop function => stack is => [A, B]</span>
-                <span class="reporter-method-output">Q = B
-stackCurrQ = B</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 2</span>
-                <span class="reporter-method-output">from pop function => stack is => [A]</span>
-                <span class="reporter-method-output">Q = A
-stackCurrQ = A</span>
-                <span class="reporter-method-output">Answer checked on line: 1</span>
-                <span class="reporter-method-output">text expected: Test</span>
-                <span class="reporter-method-output">i is 1</span>
+                <span class="reporter-method-output">text expected: Try again</span>
+                <span class="reporter-method-output">Sanity test finished!!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">answerNotChecked</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Answer at setup is not checked</span>
+                <span class="reporter-method-output"></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">18 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.FuncTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">selectAnswer24EachQ</span>
+                <span class="ignored-method-name">selectAnswer44EachQ</span>
                 <br/>
                 <span class="ignored-method-name">selectAnswer44EachQ</span>
                 <br/>
-                <span class="ignored-method-name">quitAfterSetup</span>
+                <span class="ignored-method-name">addQmarkAutomaticlly</span>
                 <br/>
                 <span class="ignored-method-name">addQmarkAutomaticlly</span>
                 <br/>
                 <span class="ignored-method-name">tryAgain</span>
                 <br/>
+                <span class="ignored-method-name">tryAgain</span>
+                <br/>
                 <span class="ignored-method-name">selectAnswerVar4EachQ</span>
+                <br/>
+                <span class="ignored-method-name">selectAnswerVar4EachQ</span>
+                <br/>
+                <span class="ignored-method-name">back2PrevQ</span>
+                <br/>
+                <span class="ignored-method-name">back2PrevQ</span>
+                <br/>
+                <span class="ignored-method-name">selectAnswer24EachQ</span>
+                <br/>
+                <span class="ignored-method-name">selectAnswer24EachQ</span>
+                <br/>
+                <span class="ignored-method-name">quitAfterSetup</span>
+                <br/>
+                <span class="ignored-method-name">quitAfterSetup</span>
                 <br/>
                 <span class="ignored-method-name">selectAnswer34EachQ</span>
                 <br/>
-                <span class="ignored-method-name">back2PrevQ</span>
+                <span class="ignored-method-name">selectAnswer34EachQ</span>
+                <br/>
+                <span class="ignored-method-name">quitGame</span>
                 <br/>
                 <span class="ignored-method-name">quitGame</span>
                 <br/>
@@ -449,33 +481,65 @@ stackCurrQ = A</span>
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SanityTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sanityTest</span>
-                <span class="method-start">2950 ms</span>
+                <span class="method-start">5373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sanityTest</span>
+                <span class="method-start">5893 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">60101 ms</span>
+                <span class="method-start">64647 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ErrorHTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">62726 ms</span>
+                <span class="method-start">67258 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SanityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">68906 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ErrorHTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox)</span>
+                <span class="method-start">71683 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">randomQ</span>
-                <span class="method-start">64958 ms</span>
+                <span class="method-name">answerNotChecked</span>
+                <span class="method-start">72427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">answerNotChecked</span>
+                <span class="method-start">74897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">191104 ms</span>
+                <span class="method-start">75459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">77921 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

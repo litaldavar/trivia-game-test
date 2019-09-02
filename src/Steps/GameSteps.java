@@ -30,8 +30,7 @@ public class GameSteps extends BaseSteps {
 	private By tryAgainButton = By.xpath("//*[@id=\"markpage\"]/center/button[1]");
 	private By QuitGameButton = By.xpath("//*[@id=\"markpage\"]/center/button[2]");
 	private By facebookButton = By.xpath("//*[@id=\"fackBook2\"]/img");
-	//*[@id="2"]/h3
-	//*[@id="1"]/h3
+
 	
 	private int qNum = 2;
 	public Stack<String> stackQ;

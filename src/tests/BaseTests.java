@@ -45,7 +45,7 @@ public class BaseTests {
   public void afterMethod() throws InterruptedException {
 	  Thread.sleep(2000);	  
 	Reporter.log("End of Method" , true);
-	  driver.quit();
+	driver.quit();
 	  
   }
 
