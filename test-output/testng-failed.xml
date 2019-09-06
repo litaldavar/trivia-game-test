@@ -5,17 +5,17 @@
     <parameter name="browser" value="chrome"/>
     <groups>
       <run>
-        <include name="eh"/>
+        <include name="int-test"/>
       </run>
     </groups>
     <classes>
-      <class name="tests.ErrorHTests">
+      <class name="tests.integrationTests">
         <methods>
-          <include name="answerNotChecked"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
+          <include name="facebookIntegrationTest"/>
         </methods>
-      </class> <!-- tests.ErrorHTests -->
+      </class> <!-- tests.integrationTests -->
       <class name="tests.SanityTest">
         <methods>
           <include name="beforeMethod"/>
@@ -25,28 +25,4 @@
       </class> <!-- tests.SanityTest -->
     </classes>
   </test> <!-- CromeTest(failed) -->
-  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
-    <groups>
-      <run>
-        <include name="eh"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="tests.ErrorHTests">
-        <methods>
-          <include name="answerNotChecked"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- tests.ErrorHTests -->
-      <class name="tests.SanityTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="sanityTest"/>
-        </methods>
-      </class> <!-- tests.SanityTest -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

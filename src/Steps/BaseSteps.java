@@ -175,6 +175,8 @@ public class BaseSteps {
 			}
 			return false;
 	}
+	
+	
 		
 	protected String getGameQuestion(By locator) {
 		WebElement e = find(locator);
@@ -183,6 +185,27 @@ public class BaseSteps {
 	//	return e.getAttribute("value").intern();
 		
 	}
+	
+	protected boolean alertClickOk() {
+		try {
+			
+		
+			WebDriverWait wait = new WebDriverWait(driver, 8 /* timeout in seconds */);
+
+			if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+				Reporter.log("alert was present", true);
+				driver.switchTo().alert().accept();
+				return true;
+				
+			}
+		}
+		catch(TimeoutException ex) {
+			Reporter.log("alert was not present -- Timeout", true);
+			return false;
+			
+		}
+		return false;
+}
 	
 
 }

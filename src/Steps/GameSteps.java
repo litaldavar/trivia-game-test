@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 import java.util.Stack;
-import java.io.*;
+import java.util.concurrent.TimeUnit;
+
 
 public class GameSteps extends BaseSteps {
 
@@ -50,6 +51,7 @@ public class GameSteps extends BaseSteps {
 	// open site 
 	public void openPage()  {
 		OpenPage(pageUrl);
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	//confirm text -- boolean
@@ -195,6 +197,14 @@ public class GameSteps extends BaseSteps {
 		String Q = getGameQuestion(b);		
 		return Q;
 		
+	}
+	
+	public void shareWithFacebook() {
+		click(facebookButton);
+	}
+	
+	public boolean clickOkonAlert() {
+		return alertClickOk();
 	}
 	
 }

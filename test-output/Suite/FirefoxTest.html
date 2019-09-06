@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 02 11:51:06 IDT 2019</td>
+<td>Started on:</td><td>Mon Sep 02 16:49:16 IDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>80 seconds (80931 ms)</td>
+<tr><td>Total time:</td><td>602 seconds (602963 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>error-handling eh sanity </td>
 </tr><tr>
@@ -75,29 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ErrorHTests.answerNotChecked()'><b>answerNotChecked</b><br>Test class: tests.ErrorHTests<br/>
-<a href="#Output-459337947" onClick='toggleBox("Output-459337947", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.ErrorHTests.QinAnotherLang()'><b>QinAnotherLang</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-895850957" onClick='toggleBox("Output-895850957", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-459337947" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-459337947">
-Answer at setup is not checked<br/>
-<br/>
+<a href="#Output-895850957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-895850957">
+input question in another language at setup<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with א<br/>
+alert was not present -- Timeout<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
-	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
+<td><div><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:331)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace459337947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace459337947'><pre>java.lang.AssertionError: Error: url is wrong expected [SVCOLLEGE TEST] but found []
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace895850957", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace895850957'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when question is not in english expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at tests.ErrorHTests.answerNotChecked(ErrorHTests.java:34)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.QinAnotherLang(ErrorHTests.java:331)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -119,7 +122,516 @@ Answer at setup is not checked<br/>
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>3</td>
+<td>17</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.answersAfterLastQBack()'><b>answersAfterLastQBack</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-271347722" onClick='toggleBox("Output-271347722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-271347722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-271347722">
+Check answers of last question after back button press<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:713)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271347722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271347722'><pre>java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at tests.ErrorHTests.answersAfterLastQBack(ErrorHTests.java:713)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>44</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.failedGame()'><b>failedGame</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-2072706587" onClick='toggleBox("Output-2072706587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2072706587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2072706587">
+failed game if one or more answers are wrong<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: You finished to build the test - lets play!!<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Failed<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Failed<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Correct answer is not at line 1 expected [true] but found [false]
+	at tests.ErrorHTests.failedGame(ErrorHTests.java:1388)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2072706587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2072706587'><pre>java.lang.AssertionError: Correct answer is not at line 1 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.failedGame(ErrorHTests.java:1388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>96</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.lastQback42Q()'><b>lastQback42Q</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1537810614" onClick='toggleBox("Output-1537810614", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1537810614" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1537810614">
+Go back from final question to previous question<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false],
+	This is not question 2 screen expected [true] but found [false]
+	at tests.ErrorHTests.lastQback42Q(ErrorHTests.java:551)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1537810614", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1537810614'><pre>java.lang.AssertionError: The following asserts failed:
+	This is not question 2 screen expected [true] but found [false],
+	This is not question 2 screen expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at tests.ErrorHTests.lastQback42Q(ErrorHTests.java:551)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>45</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.numberAsAnswer()'><b>numberAsAnswer</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-882999387" onClick='toggleBox("Output-882999387", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-882999387" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-882999387">
+number as an answer in setup<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+fill answer as 1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Answer in line 2 is not B expected [true] but found [false]
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:143)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace882999387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace882999387'><pre>java.lang.AssertionError: Answer in line 2 is not B expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.numberAsAnswer(ErrorHTests.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>11</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.overMaxCharsQ()'><b>overMaxCharsQ</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1253599640" onClick='toggleBox("Output-1253599640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1253599640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1253599640">
+Over max characters in a question<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+entered question: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br/>
+enter question 1 with A<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:103)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1253599640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1253599640'><pre>java.lang.AssertionError: Error message didn&apos;t show - no error message when max characters in question is over 50 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.overMaxCharsQ(ErrorHTests.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>6</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.randomQ()'><b>randomQ</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-401153572" onClick='toggleBox("Output-401153572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-401153572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-401153572">
+Are the game questions random?<br/>
+to be sure we will check 3 times<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+New question pushed is: A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+New question pushed is: B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+New question pushed is: C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: You finished to build the test - lets play!!<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Try number: 1<br/>
+Stack is => [A, B, C]<br/>
+from pop function => stack is => [A, B, C]<br/>
+Q = C
+stackCurrQ = C<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 3<br/>
+from pop function => stack is => [A, B]<br/>
+Q = B
+stackCurrQ = B<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 2<br/>
+from pop function => stack is => [A]<br/>
+Q = A
+stackCurrQ = A<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 1<br/>
+New question pushed is: A<br/>
+New question pushed is: B<br/>
+New question pushed is: C<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Try number: 2<br/>
+Stack is => [A, B, C]<br/>
+from pop function => stack is => [A, B, C]<br/>
+Q = C
+stackCurrQ = C<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 3<br/>
+from pop function => stack is => [A, B]<br/>
+Q = B
+stackCurrQ = B<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 2<br/>
+from pop function => stack is => [A]<br/>
+Q = A
+stackCurrQ = A<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 1<br/>
+New question pushed is: A<br/>
+New question pushed is: B<br/>
+New question pushed is: C<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+Try number: 3<br/>
+Stack is => [A, B, C]<br/>
+from pop function => stack is => [A, B, C]<br/>
+Q = C
+stackCurrQ = C<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 3<br/>
+from pop function => stack is => [A, B]<br/>
+Q = B
+stackCurrQ = B<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 2<br/>
+from pop function => stack is => [A]<br/>
+Q = A
+stackCurrQ = A<br/>
+Answer checked on line: 1<br/>
+text expected: Test<br/>
+i is 1<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Questions are not random expected [true] but found [false]
+	at tests.ErrorHTests.randomQ(ErrorHTests.java:932)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace401153572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace401153572'><pre>java.lang.AssertionError: Questions are not random expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.randomQ(ErrorHTests.java:932)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>101</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.skipFillingAQuestion()'><b>skipFillingAQuestion</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-757127697" onClick='toggleBox("Output-757127697", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-757127697" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-757127697">
+Skip filling a question<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+alert was not present -- Timeout<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:301)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace757127697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace757127697'><pre>java.lang.AssertionError: Error message didn&apos;t show - A question wasn&apos;t inserted expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at tests.ErrorHTests.skipFillingAQuestion(ErrorHTests.java:301)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
 <td>tests.ErrorHTests@42d80b78</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -130,11 +642,104 @@ Answer at setup is not checked<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
-<a href="#Output-903304134" onClick='toggleBox("Output-903304134", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.ErrorHTests.answerNotChecked()'><b>answerNotChecked</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1396861095" onClick='toggleBox("Output-1396861095", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-903304134" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-903304134">
+<a href="#Output-1396861095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1396861095">
+Answer at setup is not checked<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+alert was present<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.changeAnswerInSetup()'><b>changeAnswerInSetup</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1935491216" onClick='toggleBox("Output-1935491216", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1935491216" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1935491216">
+Change selection of answer in setup stage<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.continueWithoutAnswer()'><b>continueWithoutAnswer</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-1758890869" onClick='toggleBox("Output-1758890869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1758890869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1758890869">
+Continue to next game question without answer<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+enter question 1 with A<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 2<br/>
+enter question 2 with B<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 2<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 3<br/>
+enter question 3 with C<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 3<br/>
+text expected: You finished to build the test - lets play!!<br/>
+Let us play!!<br/>
+text expected: Test<br/>
+alert was present<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.ErrorHTests.overMaxCharA()'><b>overMaxCharA</b><br>Test class: tests.ErrorHTests<br/>
+<a href="#Output-931653235" onClick='toggleBox("Output-931653235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931653235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931653235">
+Input more than 30 characters in an answer<br/>
+SVCOLLEGE TEST<br/>
+Start game!!<br/>
+text expected: Please type here your question<br/>
+text expected:  question number: 1<br/>
+text expected: Please enter 4 possible answers and Mark the right one! <br/>
+text expected:  question number: 1<br/>
+alert was present<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>tests.ErrorHTests@42d80b78</td></tr>
+<tr>
+<td title='tests.SanityTest.sanityTest()'><b>sanityTest</b><br>Test class: tests.SanityTest<br/>
+<a href="#Output-1958973908" onClick='toggleBox("Output-1958973908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958973908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958973908">
 SVCOLLEGE TEST<br/>
 Start game!!<br/>
 text expected: Please type here your question<br/>
